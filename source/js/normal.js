@@ -25,6 +25,7 @@ const mainVisualSwiper = new Swiper(mainVisual, {
   },
   pagination: {
     el: ".main_visual-slider .swiper-pagination",
+    clickable: true
   },
   navigation: {
     nextEl: ".main_visual-slider .swiper-next",
