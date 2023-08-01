@@ -4,6 +4,17 @@ const header = document.querySelector("#header");
 const header_logo = document.querySelector("#hd_logo");
 const header_logo_img = header_logo.querySelector("img");
 
+// Header Color Style
+const headerStyle = (mode) => {
+  if(mode === 'black') {
+    header.classList.add('black');
+    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
+  } else {
+    header.classList.remove('black');
+    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo-white.png');
+  }
+}
+
 // [Plugin - swiper] Main Visual Slider
 const mainVisual = ".main_visual-slider";
 const mainVisualSwiper = new Swiper(mainVisual, {
@@ -21,16 +32,17 @@ const mainVisualSwiper = new Swiper(mainVisual, {
   }
 });
 
-// Header Color Style
-const headerStyle = (mode) => {
-  if(mode === 'black') {
-    header.classList.add('black');
-    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
-  } else {
-    header.classList.remove('black');
-    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo-white.png');
+// [Plugin - swiper] Main Visual Slider
+const partners = ".partners-slider";
+const partnersSwiper = new Swiper(partners, {
+  draggable: true,
+  slidesPerView: "auto",
+  spaceBetween: 100,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
   }
-}
+});
 
 $(document).ready(function(){
   // [plugin - FullPage] Main Scroll Effect

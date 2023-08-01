@@ -155,9 +155,9 @@ include_once(G5_THEME_PATH.'/head.php');
     </div>
   </div>
   <div id="main_footer" class="section fp-auto-height" data-anchor="page5">
-    footer
+    <?php include_once(G5_THEME_PATH."/tail_contents.php"); ?>
   </div>
 </div>
 
 <?php
-include_once(G5_THEME_PATH.'/tail.php');
+include_once(G5_THEME_PATH."/tail.sub.php");
