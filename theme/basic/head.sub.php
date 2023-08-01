@@ -95,7 +95,7 @@ add_javascript('<script src="'.EUM_PLUGIN_URL.'/prefixfree.min.js" defer></scrip
 add_javascript('<script src="'.EUM_PLUGIN_URL.'/scrollbar/jquery.mCustomScrollbar.js" defer></script>', 0);
 add_javascript('<script src="'.EUM_PLUGIN_URL.'/jquery.matchHeight.js" defer></script>', 0);
 add_javascript('<script src="'.EUM_PLUGIN_URL.'/aos/aos.js" defer></script>', 0);
-add_javascript('<script src="/source/plugin/fullpage/jquery.fullpage.js"></script>', 0);
+add_javascript('<script src="'.EUM_PLUGIN_URL.'/fullpage/jquery.fullpage.js"></script>', 0);
 add_javascript('<script src="'.EUM_PLUGIN_URL.'/niceselect/jquery.nice-select.min.js" defer></script>', 0);
 add_javascript('<script src="'.EUM_PLUGIN_URL.'/swiper/swiper-bundle.min.js" defer></script>', 0);
 /*} Plug-in, Library */
@@ -108,7 +108,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font
 /*Plug-in, Library {*/
 add_stylesheet('<link rel="stylesheet" href="'.EUM_PLUGIN_URL.'/aos/aos.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="'.EUM_PLUGIN_URL.'/scrollbar/jquery.mCustomScrollbar.min.css">', 0);
-add_stylesheet('<link rel="stylesheet" href="/source/plugin/fullpage/jquery.fullpage.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="'.EUM_PLUGIN_URL.'/fullpage/jquery.fullpage.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="'.EUM_PLUGIN_URL.'/niceselect/nice-select.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="'.EUM_PLUGIN_URL.'/swiper/swiper-bundle.min.css">', 0);
 /*} Plug-in, Library */

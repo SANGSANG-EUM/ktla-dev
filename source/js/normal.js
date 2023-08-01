@@ -20,10 +20,10 @@ const mainVisualSwiper = new Swiper('.main_visual-slider', {
 const headerStyle = (mode) => {
   if(mode === 'black') {
     header.classList.add('black');
-    header_logo_img.setAttribute('src','/source/img/logo.png');
+    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
   } else {
     header.classList.remove('black');
-    header_logo_img.setAttribute('src','/source/img/logo-white.png');
+    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo-white.png');
   }
 }
 

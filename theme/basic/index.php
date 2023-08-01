@@ -53,7 +53,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
         <div class="swiper-control">
           <div class="swiper-pagination"></div>
-          <button type="button" style="width: 30px; height: 30px;"><img src="/source/img/stop-white.svg" alt="" style="width: 20px"></button>
+          <button type="button" style="width: 30px; height: 30px;"><img src="/ktla-dev/source/img/stop-white.svg" alt="" style="width: 20px"></button>
         </div>
         <button type="button" class="swiper-arrow swiper-prev"></button>
         <button type="button" class="swiper-arrow swiper-next"></button>
@@ -63,7 +63,7 @@ include_once(G5_THEME_PATH.'/head.php');
   <div class="section main_section02" data-anchor="page2">
     <div class="sec_in">
       2
-      <button type="button" class="swiper-stop"><img src="/source/img/play-white.svg" alt=""></button>
+      <button type="button" class="swiper-stop"><img src="/ktla-dev/source/img/play-white.svg" alt=""></button>
     </div>
   </div>
   <div class="section main_section03" data-anchor="page3">

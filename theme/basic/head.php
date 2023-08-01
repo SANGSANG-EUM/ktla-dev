@@ -31,8 +31,8 @@ if(defined('_INDEX_')) { // index에서만 실행
 <!-- 헤더 시작 { -->
 <div id="header">
   <h1 id="hd_logo">
-    <a href="/">
-      <img src="/source/img/logo-white.png" alt="한국신학대학도서관협의회">
+    <a href="/ktla-dev/">
+      <img src="/ktla-dev/source/img/logo-white.png" alt="한국신학대학도서관협의회">
     </a>
   </h1>
 
@@ -65,7 +65,7 @@ if(defined('_INDEX_')) { // index에서만 실행
   </nav>
 
   <div class="hd_mb">
-    <a href="/bbs/login.php" class="hd_mb-btn login"><img src="/source/img/login-icon.png" alt="">로그인</a>
+    <a href="/ktla-dev/bbs/login.php" class="hd_mb-btn login"><img src="/ktla-dev/source/img/login-icon.png" alt="">로그인</a>
   </div>
 </div>
 <!-- } 헤더 끝 -->

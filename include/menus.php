@@ -5,12 +5,12 @@ $sb_menus = [
   [
     'id' => 'introduce',
     'name' => '신대도협 소개',
-    'link' => '/sub/test',
+    'link' => '/ktla-dev/sub/test',
     'sb_2menus' => [
       [
         'id' => 'aboutus',
         'name' => '협회 안내',
-        'link' => '/sub/test'
+        'link' => '/ktla-dev/sub/test'
       ],
       [
         'id' => '',

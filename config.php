@@ -131,9 +131,9 @@ define('G5_SYNDI_PATH',     G5_PLUGIN_PATH.'/'.G5_SYNDI_DIR);
 define('G5_PHPMAILER_PATH', G5_PLUGIN_PATH.'/'.G5_PHPMAILER_DIR);
 
 //EUM 추가 경로
-define('EUM_CSS_DIR',        '/source/css');
-define('EUM_JS_DIR',         '/source/js');
-define('EUM_PLUGIN_DIR',     '/source/plugin');
+define('EUM_CSS_DIR',        'source/css');
+define('EUM_JS_DIR',         'source/js');
+define('EUM_PLUGIN_DIR',     'source/plugin');
 
 define('EUM_JS_URL',         G5_URL.'/'.EUM_JS_DIR);
 define('EUM_CSS_URL',        G5_URL.'/'.EUM_CSS_DIR);
