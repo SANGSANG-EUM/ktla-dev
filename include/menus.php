@@ -5,31 +5,36 @@ $sb_menus = [
   [
     'id' => 'introduce',
     'name' => '신대도협 소개',
-    'link' => '/ktla-dev/sub/test',
+    'link' => '/ktla-dev/sub/aboutus',
     'sb_2menus' => [
       [
         'id' => 'aboutus',
         'name' => '협회 안내',
-        'link' => '/ktla-dev/sub/test'
+        'name_eng' => 'Association Information',
+        'link' => '/ktla-dev/sub/aboutus'
       ],
       [
-        'id' => '',
+        'id' => 'business',
         'name' => '주요 사업',
-        'link' => ''
+        'name_eng' => 'Major Business',
+        'link' => '/ktla-dev/sub/business'
       ],
       [
         'id' => '',
         'name' => '임원단',
+        'name_eng' => 'Executive Group',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '연혁',
+        'name_eng' => 'Our History',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '회칙',
+        'name_eng' => 'Association Rules',
         'link' => ''
       ]
     ]
@@ -42,11 +47,13 @@ $sb_menus = [
       [
         'id' => '',
         'name' => '회원교 명단',
+        'name_eng' => 'List Of Member Organizations',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '신도협 편람',
+        'name_eng' => 'KTLA handbook',
         'link' => ''
       ]
     ]
@@ -59,6 +66,7 @@ $sb_menus = [
       [
         'id' => '',
         'name' => '출판물',
+        'name_eng' => 'Publication',
         'link' => ''
       ]
     ]
@@ -71,21 +79,25 @@ $sb_menus = [
       [
         'id' => '',
         'name' => '자료실',
+        'name_eng' => 'Reference Library',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '활동 사진',
+        'name_eng' => 'Activity Picture',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '회원게시판',
+        'name_eng' => 'Membership Board',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '공지사항',
+        'name_eng' => 'Notice',
         'link' => ''
       ]
     ]
@@ -98,16 +110,19 @@ $sb_menus = [
       [
         'id' => '',
         'name' => '참가 안내',
+        'name_eng' => 'Participation Guide',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '온라인 등록',
+        'name_eng' => 'Online Registration',
         'link' => ''
       ],
       [
         'id' => '',
         'name' => '등록확인',
+        'name_eng' => 'Confirm Registration',
         'link' => ''
       ]
     ]

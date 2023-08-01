@@ -133,12 +133,11 @@
 
 
 /* Sub */
-.sb_top {height: 300px;}
-.sb_top.introduce_top {background:cornflowerblue;}
+.sb_top {}
+.sb_top.introduce_top {background: url('/ktla-dev/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
 .sb_top.cs_top {background: slateblue;}
-.sb_top .sb_title {font-size: 30px; font-weight: 700; color: #fff;}
-.sb_top .sb_2menus_wrap {display: flex; flex-flow: row wrap; align-items: center; gap: 10px;}
-.sb_top .sb_2menus_wrap > li {}
-.sb_top .sb_2menus_wrap > li > a {font-size: 16px; font-weight: 300; color: #ddd;}
-.sb_top .sb_2menus_wrap > li.act > a {font-weight: 500; color: #fff;}
-
+.sb_top_ct {display: flex; flex-flow: column wrap; align-items: center; justify-content: center; height: 650px;}
+.sb_top .sb_title-eng {font-size: 20px; font-weight: 400; color: #fff;}
+.sb_top .sb_title {font-size: 70px; font-weight: 700; color: #fff;}
+.sb_top .sb_menus {display: flex; position: relative; flex-flow: row wrap; justify-content: center; align-items: center;}
+.sb_top .sb_menus-home img {width: 24px;}
