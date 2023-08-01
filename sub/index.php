@@ -1,18 +1,18 @@
 <?php
-include_once $_SERVER["DOCUMENT_ROOT"].'/common.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/ktla-dev/common.php';
 
 $rq_uri0 = explode("?", $_SERVER['REQUEST_URI']);
 $rq_uri = explode("/", $rq_uri0[0]);
 $rq_uri = array_values(array_filter($rq_uri));
 
 // GET 파라미터
-parse_str($rq_uri0[1], $getParams);
+parse_str($rq_uri0[2], $getParams);
 $_GET = array_merge($_GET, $getParams);
 unset($_GET['uri']);
 $_GET['qstrUri'] = http_build_query($_GET);
 include_once G5_THEME_PATH.'/head.php';
 
-$URI['rt'] = $rq_uri[1];
+$URI['rt'] = $rq_uri[2];
 $URI['pram'] = "";
 for ($i = 2; $i < count($rq_uri); $i++) {
   $URI['pram'] .= "/{".($i - 2)."}";
@@ -24,7 +24,7 @@ if (file_exists("./_{$URI['rt']}.php")) {
   if (!($_SESSION['ss_mb_id']) && strstr($URI['rt'], 'mypage')) {
     goto_url(G5_BBS_URL.'/login.php');
   } else {
-    $route->add("/{$URI['rt']}{$URI['pram']}", "./_{$URI['rt']}.php");
+    $route->add("/{$URI['rt']}", "./_{$URI['rt']}.php");
   }
 } else {
   $route->notFound("../_404.php");

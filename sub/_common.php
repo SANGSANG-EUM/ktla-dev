@@ -1,1 +1,1 @@
-<?php include_once($_SERVER["DOCUMENT_ROOT"].'/common.php'); ?>
+<?php include_once($_SERVER["DOCUMENT_ROOT"].'/ktla-dev/common.php'); ?>

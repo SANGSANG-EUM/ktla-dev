@@ -1,7 +1,7 @@
 RewriteEngine On
 
 #location of your website
-RewriteBase /sub/
+RewriteBase /ktla-dev/sub/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
