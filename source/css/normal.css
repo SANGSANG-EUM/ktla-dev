@@ -174,3 +174,8 @@
 .aboutus-summary-list .text {width: calc(100% - 50px); padding-left: 20px;}
 .aboutus-summary-list .title {font-size: 20px; font-weight: 600; color: #0f0f0f;}
 .aboutus-summary-list .expl {margin-top: 10px; font-size: 16px; font-weight: 300; color: #666; line-height: 1.5;}
+
+#business-major-ct {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center; gap: 20px;}
+#business-major-ct .business-major-list {width: calc(50% - 10px); min-height: 180px; padding: 40px 50px; border-radius: 10px; background: #fafafa;}
+#business-major-ct .business-major-list .num {font-size: 16px; font-weight: 700; color: #2ea9a9;}
+#business-major-ct .business-major-list .text {margin-top: 15px; font-size: 24px; font-weight: 500; color: #333; line-height: 1.3;}
