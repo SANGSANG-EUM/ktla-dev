@@ -13,8 +13,6 @@ input[type="submit"], button{cursor:pointer}
 table, tr, td {border-collapse: collapse;}
 p{word-break: keep-all;}
 input{border-radius: 0;}
-select{appearance: none; border-radius: 0; outline: none;}
-select::-ms-expand {display: none;}
 
 /* guide line */
 .container {width: 100%; padding-left: 40px; padding-right: 40px;}
@@ -82,7 +80,8 @@ select::-ms-expand {display: none;}
 .check_wrap input[type=checkbox]:checked + label:after{background: url("/ktla-dev/source/img/check_icon_act.png") no-repeat center center;}
 
 /* select */
-.select_wrap select{width: 100%; height: 50px; border: 1px solid #ddd; border-radius: 10px; padding: 0 20px; font-size: 16px; font-weight: 300; color: #666; background: #fff url("/ktla-dev/source/img/icon_arr_bt_01.png") no-repeat center right 20px;}
+select.init{appearance: none; border-radius: 0; outline: none;}
+select.init::-ms-expand {display: none;}
 
 /* search */
 .sch_wrap{}
