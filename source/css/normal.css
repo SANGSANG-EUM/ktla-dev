@@ -196,3 +196,30 @@
 .input_wrap .input-text::placeholder {font-weight: 300; font-size: 16px; color: #999;}
 
 .regi_form_caption {font-weight: 400; font-size: 16px; color: #666; line-height: 1.625; padding: 16px 10px;}
+
+/* 등록확인 */
+.regi_confirm_caption {font-weight: 400; font-size: 16px; color: #666; line-height: 1.625; padding-bottom: 50px;}
+
+.regi_confirm_ct {}
+.regi_confirm_title {font-weight: 700; font-size: 20px; color: #0f0f0f; position: relative; padding-left: 15px; margin-bottom: 15px;}
+.regi_confirm_title::before {content: ''; width: 6px; height: 6px; border-radius: 50%; background-color: #0f0f0f; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.regi_confirm_list {border-top: 2px solid #666; border-bottom: 2px solid #666;}
+.regi_confirm_list table {width: 100%;}
+.regi_confirm_list table thead tr {border-bottom: 1px solid #eee;}
+.regi_confirm_list table thead tr th {font-weight: 500; font-size: 16px; color: #333; padding: 18.7px 0; background-color: #fafafa;}
+.regi_confirm_list table tbody tr {border-bottom: 1px solid #eee;}
+.regi_confirm_list table tbody tr:last-child {border-bottom: none;}
+.regi_confirm_list table tbody tr td {text-align: center; padding: 12px 3px;}
+.regi_confirm_list table tbody tr .td-num {width: 90px;}
+.regi_confirm_list table tbody tr .td-name {width: 160px;}
+.regi_confirm_list table tbody tr .td-content {}
+.regi_confirm_list table tbody tr .td-date {width: 140px;}
+.regi_confirm_list table tbody tr .td-status {width: 140px;}
+.regi_confirm_list table tbody tr .td-confirm {width: 140px;}
+.regi_confirm_list table tbody tr .td-btn {width: 120px;}
+.regi_confirm_list table tbody tr td .confirm-btn {border: 1px solid #2EA9A9; border-radius: 8px; font-weight: 300; font-size: 14px; color: #2EA9A9; text-align: center; width: 84px; height: 33px; background-color: #fff;}
+.regi_confirm_list table tbody tr td.td-btn {font-size: 0;}
+.regi_confirm_list table tbody tr td .td-btn-item {display: inline-block; vertical-align: middle; padding: 0 12px; position: relative;}
+.regi_confirm_list table tbody tr td .td-btn-item::before {content: ''; width: 1px; height: 15px; background-color: #ccc; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.regi_confirm_list table tbody tr td .td-btn-item:first-child::before {display: none;}
+.regi_confirm_list table tbody tr td .td-btn-item .tb-btn {font-size: 16px; font-weight: 300; font-size: 16px; color: #999; border: none; background-color: transparent;}
