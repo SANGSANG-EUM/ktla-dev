@@ -151,3 +151,20 @@
 .sb_menus-sel .option:hover,
 .sb_menus-sel .option.focus,
 .sb_menus-sel .option.selected.focus {font-weight: 600;}
+
+.sub_contents {padding: 100px 0 140px;}
+.sub_title_box {padding-bottom: 70px;}
+.sub_title {font-weight: 300; font-size: 50px; color: #0f0f0f; line-height: 1.32;}
+.sub_title .bold {font-weight: 700;}
+
+.btn_wrap {padding-top: 30px;}
+.btn_wrap .btn_box {text-align: center;}
+.btn_wrap .btn_box .btn {max-width: 300px; width: 100%; border-radius: 5px; font-weight: 500; font-size: 20px; color: #fff; text-align: center; background-color: #2EA9A9; display: inline-block; height: 70px; line-height: 70px;}
+
+/* 참가안내 */
+.participation_method_list {border-top: 2px solid #666; border-bottom: 2px solid #666;}
+.participation_method_list li {display: flex; align-items: flex-start; border-bottom: 1px dashed #ccc; padding: 40px 9px 50px;}
+.participation_method_list li:last-child {border-bottom: none;}
+.participation_method_title {font-weight: 700; font-size: 30px; color: #0f0f0f; width: 310px;}
+.participation_method_item {font-weight: 300; font-size: 16px; color: #666; position: relative; padding-left: 10px; line-height: 1.875;}
+.participation_method_item::before {content: '-'; font-weight: 300; font-size: 16px; color: #666; position: absolute; top: 0; left: 0;}
