@@ -73,6 +73,8 @@ const mcScrollbar = (target_id) => {
   }
 }
 
+export { addZero, formatDate, tabAddOnClass, mcScrollbar };
+
 $(document).ready(function(){
   // [plugin-Match Height]
   if($(".match-height").length > 0){
