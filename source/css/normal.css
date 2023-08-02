@@ -151,3 +151,26 @@
 .sb_menus-sel .option:hover,
 .sb_menus-sel .option.focus,
 .sb_menus-sel .option.selected.focus {font-weight: 600;}
+
+.sub_contents {padding: 100px 0 140px;}
+.sub_title_box {padding-bottom: 70px;}
+.sub_title {font-weight: 300; font-size: 50px; color: #0f0f0f; line-height: 1.32;}
+.sub_title .bold {font-weight: 700;}
+
+.btn_wrap {padding-top: 30px;}
+.btn_wrap .btn_box {text-align: center;}
+.btn_wrap .btn_box .btn {max-width: 300px; width: 100%; border-radius: 5px; font-weight: 500; font-size: 20px; color: #fff; text-align: center; background-color: #2EA9A9; display: inline-block; height: 70px; line-height: 70px;}
+
+.aboutus-banner {margin-bottom: 70px; font-size: 0; text-align: right;}
+.aboutus-banner-img {display: inline-block; overflow: hidden; width: calc(50% + 640px); max-width: 100%; height: 500px; border-radius: 100px 0 0 0; background: url('/ktla-dev/source/img/aboutus-banner.jpg') no-repeat bottom center/cover;}
+
+#aboutus .sub_title_box {padding-bottom: 40px;}
+.aboutus-text {font-size: 18px; font-weight: 300; color: #666; line-height: 1.67;}
+
+.aboutus-summary {margin-top: 70px;}
+.aboutus-summary .inner {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 30px;}
+.aboutus-summary-list {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; width: calc(33.333% - 20px); padding: 33px 55px 30px 33px; border: 1px solid #e6e6e6; border-radius: 10px;}
+.aboutus-summary-list .icon {width: 50px;}
+.aboutus-summary-list .text {width: calc(100% - 50px); padding-left: 20px;}
+.aboutus-summary-list .title {font-size: 20px; font-weight: 600; color: #0f0f0f;}
+.aboutus-summary-list .expl {margin-top: 10px; font-size: 16px; font-weight: 300; color: #666; line-height: 1.5;}
