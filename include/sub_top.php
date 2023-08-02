@@ -15,7 +15,8 @@ function sub_top($sb_menus, $sb_id, $pg_id){
         <p class="sb_title"><?php echo $sb_menus[$menu_index]['sb_2menus'][$menu2_index]['name']; ?></p>
         <div class="sb_menus">
           <a href="/ktla-dev/" class="sb_menus-home"><img src="/ktla-dev/source/img/sb_menu-home.png" alt="홈으로 가기"></a>
-          <select class="sb_menus_sel">
+          <span class="sb_menus-arrow arrow1"><img src="/ktla-dev/source/img/arrow-right-white.svg" alt=""></span>
+          <select class="nc-sel sb_menus-sel depth1" onchange="redirectToSelectedPage(event)">
           <?php 
           foreach ($sb_menus as $menu) {
           ?>
@@ -24,7 +25,8 @@ function sub_top($sb_menus, $sb_id, $pg_id){
           } 
           ?>
           </select>
-          <select class="sb_menus_sel">
+          <span class="sb_menus-arrow arrow2"><img src="/ktla-dev/source/img/arrow-right-white.svg" alt=""></span>
+          <select class="nc-sel sb_menus-sel depth2" onchange="redirectToSelectedPage(event)">
           <?php 
           foreach ($sb_menus[$menu_index]['sb_2menus'] as $menu2) {
           ?>
@@ -41,3 +43,15 @@ function sub_top($sb_menus, $sb_id, $pg_id){
 <?php
 } 
 ?>
+
+<script>
+// select redirect
+const redirectToSelectedPage = (event) => {
+  let selectElement = event.target;
+  let selectedOption = selectElement.value;
+
+  if (selectedOption !== "") {
+    window.location.href = selectedOption;
+  }
+}
+</script>
