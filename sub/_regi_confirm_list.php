@@ -3,7 +3,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 ?>
 
 <div id="regi_confirm_list" class="contents_wrap sub">
-  <?php sub_top($sb_menus, 'introduce', 'aboutus'); ?>
+  <?php sub_top($sb_menus, 'seminar', 'regi_view'); ?>
 
   <div class="sub_contents">
     

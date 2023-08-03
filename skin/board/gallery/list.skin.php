@@ -12,7 +12,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <div id="gallery_list" class="sub gallery contents_wrap">
-  <?php sub_top($sb_menus, 'cs', 'gallery'); ?>
+  <?php sub_top($sb_menus, 'community', 'picture'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">

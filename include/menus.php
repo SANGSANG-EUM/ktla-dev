@@ -40,15 +40,15 @@ $sb_menus = [
     ]
   ],
   [
-    'id' => '',
+    'id' => 'organization',
     'name' => '회원교 안내',
     'link' => '',
     'sb_2menus' => [
       [
-        'id' => '',
+        'id' => 'member',
         'name' => '회원교 명단',
         'name_eng' => 'List Of Member Organizations',
-        'link' => ''
+        'link' => '/ktla-dev/sub/member_list'
       ],
       [
         'id' => '',
@@ -72,58 +72,58 @@ $sb_menus = [
     ]
   ],
   [
-    'id' => '',
+    'id' => 'community',
     'name' => '커뮤니티',
     'link' => '',
     'sb_2menus' => [
       [
-        'id' => '',
+        'id' => 'library',
         'name' => '자료실',
         'name_eng' => 'Reference Library',
         'link' => ''
       ],
       [
-        'id' => '',
+        'id' => 'picture',
         'name' => '활동 사진',
         'name_eng' => 'Activity Picture',
-        'link' => ''
+        'link' => '/ktla-dev/gallery'
       ],
       [
-        'id' => '',
+        'id' => 'membership',
         'name' => '회원게시판',
         'name_eng' => 'Membership Board',
         'link' => ''
       ],
       [
-        'id' => '',
+        'id' => 'notice',
         'name' => '공지사항',
         'name_eng' => 'Notice',
-        'link' => ''
+        'link' => '/ktla-dev/notice'
       ]
     ]
   ],
   [
-    'id' => '',
+    'id' => 'seminar',
     'name' => '세미나 안내',
     'link' => '',
     'sb_2menus' => [
       [
-        'id' => '',
+        'id' => 'regi_guide',
         'name' => '참가 안내',
         'name_eng' => 'Participation Guide',
-        'link' => ''
+        'link' => '/ktla-dev/sub/participation'
       ],
       [
-        'id' => '',
+        'id' => 'regi_write',
         'name' => '온라인 등록',
         'name_eng' => 'Online Registration',
-        'link' => ''
+        'link' => '/ktla-dev/sub/registration'
       ],
       [
-        'id' => '',
+        'id' => 'regi_view',
         'name' => '등록확인',
         'name_eng' => 'Confirm Registration',
-        'link' => ''
+        'link' => '/ktla-dev/sub/regi_confirm_list'
       ]
     ]
   ]

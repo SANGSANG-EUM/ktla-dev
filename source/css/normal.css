@@ -135,6 +135,9 @@
 /* Sub */
 .sb_top {}
 .sb_top.introduce_top {background: url('/ktla-dev/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
+.sb_top.organization_top {background: url('/ktla-dev/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
+.sb_top.community_top {background: url('/ktla-dev/source/img/sb-top-bg-community.jpg') no-repeat center/cover;}
+.sb_top.seminar_top {background: url('/ktla-dev/source/img/sb-top-bg-seminar.jpg') no-repeat center/cover;}
 .sb_top.cs_top {background: slateblue;}
 .sb_top_ct {display: flex; flex-flow: column wrap; align-items: center; justify-content: center; height: 650px; padding-top: 95px;}
 .sb_top .sb_title-eng {font-size: 20px; font-weight: 400; color: #fff;}
