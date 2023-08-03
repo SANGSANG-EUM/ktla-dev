@@ -391,6 +391,68 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 .bo_btn2{display: block; height: 40px; line-height: 40px; padding: 0 15px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; font-weight: 400; color: #000; background: #fff;}
 .bo_btn3{display: block; height: 40px; line-height: 40px; padding: 0 15px; border-radius: 5px; font-size: 14px; font-weight: 400; color: #fff; background: #e50000;}
 
+/* 신대도협 커스텀 */
+/* Search { */
+.bo_top_info {margin-bottom: 50px;}
+#bo_list_total {display: none;}
+.bo_sch_wrap {float: none; width: 100%; background-color: #F7F8FB; border-radius: 10px;padding: 50px 65px;}
+.bo_sch select {display: none;}
+.bo_sch .sch_bar {width: 100%; padding-left: 0;}
+.bo_sch .sch_input {width: calc(100% - 96px); background-color: #fff; height: 50px; border-radius: 5px; font-weight: 300; font-size: 16px; color: #0f0f0f; padding-left: 16px; border-radius: 5px 0 0 5px;}
+.bo_sch .sch_input::placeholder {font-weight: 300; font-size: 16px; color: #ccc;}
+.bo_sch .sch_btn {background-color: #2EA9A9; width: 96px; height: 50px; font-size: 0;}
+.bo_sch .sch_btn span:first-child {margin-right: 6px; margin-top: 0;}
+.bo_sch .sch_btn span {font-weight: 500; font-size: 18px; color: #fff; display: inline-block;}
+/* } Search */
+
+/* List { */
+#gall_contents {border-top: 2px solid #333; border-bottom: none;}
+#bo_gall #gall_ul {margin: -25px -20px;}
+#bo_gall .gall_li {padding: 25px 20px; width: 33.33%;}
+#bo_gall .gall_img {border-radius: 10px; overflow: hidden;}
+#bo_gall .gall_img a {padding-bottom: 65.335%;}
+#bo_gall .gall_text_href {padding: 20px 10px 0;}
+#bo_gall .gall_info {display: none;}
+#bo_gall .bo_tit {font-weight: 500; font-size: 18px; color: #333;}
+#bo_gall .bo_cnt {font-weight: 300; font-size: 16px; color: #666;}
+/* } List */
+
+/* paging { */
+.pg_wrap {display: block; float: none; text-align: center; padding-top: 70px;}
+.pg_current {background-color: transparent; font-weight: 600; font-size: 16px; color: #333; border: none; width: auto; padding: 0; position: relative; height: 24px; line-height: 24px; min-width: auto; padding: 0 5px;}
+.pg_current::before {content: ''; width: 9px; height: 2px; background-color: #2EA9A9; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
+.pg_page {background-color: transparent; font-weight: 400; font-size: 16px; color: #ccc; border: none; width: auto; padding: 0; height: 24px; line-height: 24px; min-width: auto; padding: 0 5px;}
+.pg_page:hover {background-color: transparent;}
+.pg_start {background: url('/ktla-dev/source/img/icon-start.png') no-repeat center; width: 26px;}
+.pg_end {background: url('/ktla-dev/source/img/icon-end.png') no-repeat center; width: 26px;}
+.pg_prev {background: url('/ktla-dev/source/img/icon-prev.png') no-repeat center; width: 26px;}
+.pg_next {background: url('/ktla-dev/source/img/icon-next.png') no-repeat center; width: 26px;}
+/* } paging */
+
+/* View { */
+#bo_v {margin-bottom: 0;}
+#bo_v header {border-top: none; padding: 0;}
+#bo_v_title .bo_v_tit {font-weight: 500; font-size: 36px; color: #0f0f0f; border-bottom: 2px solid #666; padding-bottom: 20px;}
+.profile_info {display: block; border-bottom: 1px solid #eee; margin-top: 0; padding: 25px 10px;}
+.profile_info_ct_ul > li strong {font-weight: 300; font-size: 16px; color: #666;}
+.profile_info_ct_ul > li strong .bold {font-weight: 400; font-size: 16px; color: #333;}
+
+#bo_v_atc {font-weight: 300; font-size: 16px; color: #666; line-height: 1.75; padding: 40px 10px; min-height: 300px; border-bottom: none;}
+
+#bo_v_source {border-bottom: 1px solid #eee;}
+#bo_v_file {border-bottom: none; background-color: #fafafa; padding: 20px;}
+#bo_v_file a {font-weight: 400; font-size: 16px; color: #333;}
+
+#bo_v_oth {margin-top: 40px; text-align: center;}
+#bo_v_oth .bo_v_back_btn {width: 156px; height: 67px; line-height: 67px; border-radius: 10px; border: 1px solid #666; background-color: #fff; font-weight: 500; font-size: 16px; color: #333; padding: 0; margin: 0 auto; float: none;}
+
+.bo_v_nb {margin-top: 100px; border-top: 2px solid #333;}
+.bo_v_nb li {display: block; width: 100%; border-bottom: 1px solid #eee; font-size: 0; padding: 25px 10px;}
+.bo_v_nb li .left {display: inline-block; font-weight: 400; font-size: 16px; color: #333; position: relative; width: 90px;}
+.bo_v_nb li .left::after {content: ''; width: 1px; height: 15px; background-color: #ccc; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.bo_v_nb li .right {display: inline-block; font-weight: 300; font-size: 16px; color: #666; width: calc(100% - 90px); padding-left: 30px;}
+/* } View */
+
 
 /* Responsive */
 @media screen and (max-width:1290px){
