@@ -26,16 +26,16 @@ $sb_menus = [
         'link' => '/ktla-dev/sub/executive'
       ],
       [
-        'id' => '',
+        'id' => 'history',
         'name' => '연혁',
         'name_eng' => 'Our History',
-        'link' => ''
+        'link' => '/ktla-dev/sub/history'
       ],
       [
-        'id' => '',
+        'id' => 'rules',
         'name' => '회칙',
         'name_eng' => 'Association Rules',
-        'link' => ''
+        'link' => '/ktla-dev/sub/rules'
       ]
     ]
   ],
