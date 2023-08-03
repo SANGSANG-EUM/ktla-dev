@@ -201,3 +201,66 @@
 #executive-ct-tb tbody td .person_wrap .person {font-size: 16px; font-weight: 300; color: #666;}
 #executive-ct-tb tbody td .person_wrap .person:before {content: "/"; display: inline-block; vertical-align: middle; margin: -4px 7px 0;}
 #executive-ct-tb tbody td .person_wrap .person:first-child:before {display: none;}
+
+/* 참가안내 */
+.participation_method_list {border-top: 2px solid #666; border-bottom: 2px solid #666;}
+.participation_method_list li {display: flex; align-items: flex-start; border-bottom: 1px dashed #ccc; padding: 40px 9px 50px;}
+.participation_method_list li:last-child {border-bottom: none;}
+.participation_method_title {font-weight: 700; font-size: 30px; color: #0f0f0f; width: 310px;}
+.participation_method_item {font-weight: 300; font-size: 16px; color: #666; position: relative; padding-left: 10px; line-height: 1.875;}
+.participation_method_item::before {content: '-'; font-weight: 300; font-size: 16px; color: #666; position: absolute; top: 0; left: 0;}
+
+/* 온라인 등록 */
+.regi_expl_wrap {}
+.regi_expl_box {border-radius: 10px; background-color: #fafafa; padding: 40px 50px;}
+.regi_expl_box .expl01 {font-weight: 500; font-size: 24px; color: #333;}
+.regi_expl_box .expl02 {font-weight: 300; font-size: 16px; color: #666; line-height: 1.625; padding-top: 18px;}
+.regi_expl_info_ul {padding-top: 26px; margin: 0 -20px;}
+.regi_expl_info_ul li {padding: 0 20px; font-size: 0;}
+.regi_expl_info_ul li > * {display: inline-block; vertical-align: middle; font-size: 16px;}
+.regi_expl_info_ul li .title {font-weight: 500; font-size: 16px; color: #2EA9A9; border: 1px solid #2EA9A9; border-radius: 999px; padding: 6px 15px;}
+.regi_expl_info_ul li .content {font-weight: 500; font-size: 16px; color: #333; padding-left: 10px;}
+
+.regi_form_wrap {padding-top: 60px;}
+.regi_form_list {border-top: 2px solid #666; border-bottom: 2px solid #666;}
+.regi_form_li {display: inline-block; font-size: 0; padding: 0 50px 0 10px; position: relative; border-bottom: 1px solid #eee;}
+.regi_form_li:last-child {border-bottom: none;}
+.regi_form_li:nth-child(2n) {padding-left: 60px;}
+.regi_form_li:nth-child(2n)::before {content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 1px; height: 15px; background-color: #e0e0e0;}
+.regi_form_li_inner {display: flex; align-items: center; min-height: 70px;}
+.regi_form_li_inner > * {display: inline-block; vertical-align: middle; font-size: 16px;}
+.regi_form_title {font-weight: 500; font-size: 16px; color: #0f0f0f; width: 120px;}
+.regi_form_content {width: calc(100% - 120px);}
+
+.input_wrap {}
+.input_wrap .input-text {width: 100%; border: 1px solid #EBEFFA; border-radius: 5px; background-color: #F7F8FB; height: 45px; padding: 0 20px; font-weight: 300; font-size: 16px; color: #0f0f0f;}
+.input_wrap .input-text::placeholder {font-weight: 300; font-size: 16px; color: #999;}
+
+.regi_form_caption {font-weight: 400; font-size: 16px; color: #666; line-height: 1.625; padding: 16px 10px;}
+
+/* 등록확인 */
+.regi_confirm_caption {font-weight: 400; font-size: 16px; color: #666; line-height: 1.625; padding-bottom: 50px;}
+
+.regi_confirm_ct {}
+.regi_confirm_title {font-weight: 700; font-size: 20px; color: #0f0f0f; position: relative; padding-left: 15px; margin-bottom: 15px;}
+.regi_confirm_title::before {content: ''; width: 6px; height: 6px; border-radius: 50%; background-color: #0f0f0f; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.regi_confirm_list {border-top: 2px solid #666; border-bottom: 2px solid #666;}
+.regi_confirm_list table {width: 100%;}
+.regi_confirm_list table thead tr {border-bottom: 1px solid #eee;}
+.regi_confirm_list table thead tr th {font-weight: 500; font-size: 16px; color: #333; padding: 18.7px 0; background-color: #fafafa;}
+.regi_confirm_list table tbody tr {border-bottom: 1px solid #eee;}
+.regi_confirm_list table tbody tr:last-child {border-bottom: none;}
+.regi_confirm_list table tbody tr td {text-align: center; padding: 12px 3px;}
+.regi_confirm_list table tbody tr .td-num {width: 90px;}
+.regi_confirm_list table tbody tr .td-name {width: 160px;}
+.regi_confirm_list table tbody tr .td-content {}
+.regi_confirm_list table tbody tr .td-date {width: 140px;}
+.regi_confirm_list table tbody tr .td-status {width: 140px;}
+.regi_confirm_list table tbody tr .td-confirm {width: 140px;}
+.regi_confirm_list table tbody tr .td-btn {width: 120px;}
+.regi_confirm_list table tbody tr td .confirm-btn {border: 1px solid #2EA9A9; border-radius: 8px; font-weight: 300; font-size: 14px; color: #2EA9A9; text-align: center; width: 84px; height: 33px; background-color: #fff;}
+.regi_confirm_list table tbody tr td.td-btn {font-size: 0;}
+.regi_confirm_list table tbody tr td .td-btn-item {display: inline-block; vertical-align: middle; padding: 0 12px; position: relative;}
+.regi_confirm_list table tbody tr td .td-btn-item::before {content: ''; width: 1px; height: 15px; background-color: #ccc; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.regi_confirm_list table tbody tr td .td-btn-item:first-child::before {display: none;}
+.regi_confirm_list table tbody tr td .td-btn-item .tb-btn {font-size: 16px; font-weight: 300; font-size: 16px; color: #999; border: none; background-color: transparent;}

@@ -11,12 +11,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 */
 ?>
 
-<div id="gallery_list" class="sub gallery">
+<div id="gallery_list" class="sub gallery contents_wrap">
   <?php sub_top($sb_menus, 'cs', 'gallery'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">
     <div class="wrapper">
+
+      <!-- Sub Title { -->
+      <div class="sub_title_box">
+        <p class="sub_title">
+          한국신학대학도서관협의회는 다양한 활동을 <br>
+          통해 <span class="bold">유대를 강화</span>합니다.
+        </p>
+      </div>
+      <!-- } Sub Title -->
 
       <!-- 게시판 목록 시작 { -->
       <div id="bo_gall" style="width:<?php echo $width; ?>">
@@ -60,7 +69,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
                     <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required id="stx" class="sch_input" size="25" maxlength="20" placeholder=" 검색어를 입력해주세요">
                     <button type="submit" value="검색" class="sch_btn">
-                      <i class="fa fa-search" aria-hidden="true"></i>
+                      <span><img src="/ktla-dev/source/img/icon-srch.png" alt="검색"></span>
+                      <span>검색</span>
                       <span class="sound_only">검색</span>
                     </button>
                   </div>
@@ -162,7 +172,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                       <a href="<?php echo $list[$i]['href'] ?>" class="cut_text bo_tit">
                         <?php echo $list[$i]['wr_subject']; //글 제목 ?>
                       </a>
-                      <duv class="bo_cnt"><?php echo utf8_strcut(strip_tags($list[$i]['wr_content']), 68, '..'); ?></duv>
+                      <div class="bo_cnt">
+                        <!-- <?php echo utf8_strcut(strip_tags($list[$i]['wr_content']), 68, '..'); ?> -->
+                        <?php echo date("Y-m-d", strtotime($list[$i]['wr_datetime'])) ?>
+                      </div>
                     </div>
 
                     <div class="cf gall_info">

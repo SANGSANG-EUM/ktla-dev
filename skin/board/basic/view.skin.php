@@ -176,30 +176,32 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <!-- 게시글 이동 버튼 { -->
         <div id="bo_v_oth">
           <a href="<?php echo $list_href ?>" class="bo_v_back_btn">LIST</a>
-
-          <?php if ($prev_href || $next_href) { ?>
-          <ul class="i-col-0 bo_v_nb">
-            <?php if ($prev_href) { ?>
-            <li class="btn_prv">
-              <a href="<?php echo $prev_href ?>" class="bo_v_nb_btn bo_v_nb_prev">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>이전글
-              </a>
-            </li>
-            <?php } ?>
-            <?php if ($next_href) { ?>
-            <li class="btn_next">
-              <a href="<?php echo $next_href ?>" class="bo_v_nb_btn bo_v_nb_next">
-                다음글<i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </a>
-            </li>
-            <?php } ?>
-          </ul>
-          <?php } ?>
         </div>
         <!-- } 게시글 이동 버튼 -->
 
+        <?php if ($prev_href || $next_href) { ?>
+        <ul class="i-col-0 bo_v_nb">
+          <?php if ($prev_href) { ?>
+          <li class="btn_prv">
+            <a href="<?php echo $prev_href ?>" class="bo_v_nb_btn bo_v_nb_prev">
+              <span class="left">이전글</span>
+              <span class="right"><?php echo $prev_wr_subject;?></span>
+            </a>
+          </li>
+          <?php } ?>
+          <?php if ($next_href) { ?>
+          <li class="btn_next">
+            <a href="<?php echo $next_href ?>" class="bo_v_nb_btn bo_v_nb_next">
+              <span class="left">다음글</span>
+              <span class="right"><?php echo $next_wr_subject;?></span>
+            </a>
+          </li>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+
         <!-- 댓글 영역 { -->
-        <?php include_once(G5_BBS_PATH.'/view_comment.php'); ?>
+        <?php //include_once(G5_BBS_PATH.'/view_comment.php'); ?>
         <!-- } 댓글 영역 -->
       </article>
       <!-- } 게시판 읽기 끝 -->
