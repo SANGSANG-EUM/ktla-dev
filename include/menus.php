@@ -20,10 +20,10 @@ $sb_menus = [
         'link' => '/ktla-dev/sub/business'
       ],
       [
-        'id' => '',
+        'id' => 'executive',
         'name' => '임원단',
         'name_eng' => 'Executive Group',
-        'link' => ''
+        'link' => '/ktla-dev/sub/executive'
       ],
       [
         'id' => '',
