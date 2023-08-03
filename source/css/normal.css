@@ -264,3 +264,22 @@
 .regi_confirm_list table tbody tr td .td-btn-item::before {content: ''; width: 1px; height: 15px; background-color: #ccc; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
 .regi_confirm_list table tbody tr td .td-btn-item:first-child::before {display: none;}
 .regi_confirm_list table tbody tr td .td-btn-item .tb-btn {font-size: 16px; font-weight: 300; font-size: 16px; color: #999; border: none; background-color: transparent;}
+
+/* 회원교 명단 */
+.consonant_category_ul {margin: 0 -22px;}
+.consonant_category_ul li {padding: 0 22px; position: relative;}
+.consonant_category_ul li::after {content: ''; width: 1px;  height: 15px; background-color: #eee; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.consonant_category_ul li:last-child::after {display: none;}
+.consonant_category_ul li button {font-weight: 500; font-size: 18px; color: #ccc; border: none; background-color: transparent;}
+.consonant_category_ul li.active button {font-weight: 600; color: #2EA9A9;}
+
+.member_list_box {padding-top: 60px;}
+.member_list {margin: -10px;}
+.member_list li {padding: 10px;}
+.member_list_inner {border-radius: 10px; border: 1px solid #E6E6E6; padding: 29px 50px 30px;}
+.member_list_inner .title {font-weight: 500; font-size: 18px; color: #333; padding-bottom: 40px; position: relative;}
+.member_list_inner .title::before {content: ''; width: 18px; height: 2px; background-color: #666; position: absolute; bottom: 20px; left: 0;}
+.member_list_info {}
+.member_list_info_item {font-weight: 300; font-size: 16px; color: #666; line-height: 1.875;}
+.member_list_info_item.address::before {content: 'A.  '; font-weight: 400; font-size: 16px; color: #333;}
+.member_list_info_item.tel::before {content: 'T.  '; font-weight: 400; font-size: 16px; color: #333;}
