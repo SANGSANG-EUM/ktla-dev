@@ -23,13 +23,17 @@ include EUM_INCLUDE_PATH.'/menus.php';
 ?>
 
 <?php
+$header_style = "";
 if(defined('_INDEX_')) { // index에서만 실행
+  $header_style = "";
   include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+} else {
+  $header_style = "scr_black";
 }
 ?>
 
 <!-- 헤더 시작 { -->
-<div id="header">
+<div id="header" class="<?php echo $header_style;?>">
   <h1 id="hd_logo">
     <a href="/ktla-dev/">
       <img src="/ktla-dev/source/img/logo-white.png" alt="한국신학대학도서관협의회">

@@ -45,6 +45,16 @@ const partnersSwiper = new Swiper(partners, {
   }
 });
 
+const scrollHeader = (scrollValue) => {
+  if ( scrollValue > 30 ) {
+    $(".scr_black").addClass("black2");
+    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
+  } else {
+    $(".scr_black").removeClass("black2");
+    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo-white.png');
+  }
+}
+
 $(document).ready(function(){
   // [plugin - FullPage] Main Scroll Effect
   $('#main').fullpage({
@@ -80,5 +90,13 @@ $(document).ready(function(){
   //메인 퀵메뉴 오버 마우스 효과
   $(".main_quick_list-item").on('mouseover', function(){
     $(this).addClass('act').siblings().removeClass('act');
+  });
+
+  let scrollValue = $(document).scrollTop();
+  scrollHeader(scrollValue);
+
+  $(window).scroll(function(){
+    scrollValue = $(document).scrollTop(); 
+    scrollHeader(scrollValue);
   });
 });
