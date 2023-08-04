@@ -213,6 +213,44 @@
 #executive-ct-tb tbody td .person_wrap .person:first-child:before {display: none;}
 
 /* 연혁 */
+.history-tab {}
+.history-tab .inner {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center; gap: 10px 40px;}
+.history-tab-btn {display: block; position: relative; border: 0; font-size: 18px; font-weight: 500; color: #ccc; background: #fff;}
+.history-tab-btn:after {content: ""; display: block; position: absolute; top: 50%; left: -20px; z-index: 1; height: 16px; margin-top: -8px; border-left: 1px solid #eee;}
+.history-tab-btn:first-child:after {display: none;}
+.history-tab-btn.act {font-weight: 600; color: #2ea9a9;}
+.history-tab-btn:not(.act):hover {color: #333;}
+
+.history-ct {margin-top: 60px;}
+#history-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
+#history-ct-tit:before {content: ""; display: inline-block; width: 5px; height: 5px; margin: 10px 12px 0 0; border-radius: 50%; background: #0f0f0f; vertical-align: top;}
+
+.history-ct_wrap {margin-top: 15px; padding: 25px 0; border-top: 2px solid #666; border-bottom: 2px solid #666;}
+.history-box {display: flex; position: relative; margin-top: 25px; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start;}
+.history-box:before {content: ""; display: block; position: absolute; top: -25px; left: 155px; z-index: 1; border-left: 1px solid #eee; height: calc(100% + 25px);}
+.history-box:after {content: ""; display: block; position: absolute; top: 11px; left: 151px; z-index: 2; width: 9px; height: 9px; border-radius: 2px; background: #2ea9a9;}
+.history-box:first-child {margin-top: 0;}
+.history-box:first-child:before {top: 15px; height: calc(100% - 15px);}
+.history-box:last-child:before {height: 36px;}
+.history-box .year {width: 155px; margin-top: 5px; font-size: 18px; font-weight: 500; color: #333; text-align: center;}
+.history-box .substance {width: calc(100% - 155px); padding: 0 30px 0 65px;}
+.history-box .substance .text {position: relative; font-size: 16px; font-weight: 300; color: #666; padding-left: 10px; text-indent: 0; line-height: 1.875;}
+.history-box .substance .text:before {content: "-"; display: block; position: absolute; top: 7px; left: 0; z-index: 1; font-size: 16px; font-weight: 300; color: #666; line-height: 1;}
+
+/* 세미나 현황 */
+.seminar-ct {margin-top: 60px;}
+#seminar-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
+#seminar-ct-tit:before {content: ""; display: inline-block; width: 5px; height: 5px; margin: 10px 12px 0 0; border-radius: 50%; background: #0f0f0f; vertical-align: top;}
+
+.seminar-ct_wrap {margin-top: 15px; border-top: 2px solid #666;}
+.seminar-box {border-bottom: 1px solid #d9d9d9;}
+.seminar-box .year {height: 90px; line-height: 90px; padding-left: 30px; font-size: 20px; font-weight: 500; color: #333; background: #fff;}
+.seminar-group {padding: 0 60px; background: #fafafa;}
+.seminar-group .substance {display: flex; position: relative; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; padding: 40px 0; border-top: 1px solid #d9d9d9;}
+.seminar-group .substance:first-child {border-top: 0;}
+.seminar-group .substance .title {width: 230px;}
+.seminar-group .substance .expl {width: calc(100% - 230px); font-size: 16px; font-weight: 300; color: #666; line-height: 1.625;}
+.seminar-group .substance .expl b {font-weight: 400; color: #333; line-height: 2;}
 
 /* 회칙 */
 
