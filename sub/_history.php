@@ -230,9 +230,9 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
             <p id="seminar-ct-tit">신대도협 세미나 현황</p>
             <div class="seminar-ct_wrap">
 
-              <div class="seminar-box">
+              <div class="seminar-box act">
                 <div class="year">2012년</div>
-                <div class="seminar-group">
+                <div class="seminar-group" style="display: block">
                   <div class="substance">
                     <div class="title">&lt;6월&gt; 하계 세미나</div>
                     <div class="expl">

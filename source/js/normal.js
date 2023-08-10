@@ -109,4 +109,18 @@ $(document).ready(function(){
     $(this).addClass('act').siblings(hisSemiTab).removeClass('act');
     $(hisSemiTabCt).eq(hisSemiTabIndex).fadeIn(200).siblings(hisSemiTabCt).hide();
   })
+
+  //신대도협소개 > 세미나현황 아코디언
+  let seminarBtn = ".seminar-box .year";
+  let seminarBox = "";
+  let seminarCt = "";
+  
+  $(seminarBtn).on('click', function(){
+    seminarBox = $(this).closest(".seminar-box");
+    seminarCt = $(this).siblings(".seminar-group");
+
+    seminarBox.addClass('act').siblings().removeClass('act');
+    seminarCt.slideDown(200);
+    seminarBox.siblings().find(".seminar-group").slideUp(200)
+  })
 });
