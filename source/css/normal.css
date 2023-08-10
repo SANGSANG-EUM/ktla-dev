@@ -221,7 +221,9 @@
 .history-tab-btn.act {font-weight: 600; color: #2ea9a9;}
 .history-tab-btn:not(.act):hover {color: #333;}
 
-.history-ct {margin-top: 60px;}
+.hissemi-ct {margin-top: 60px;}
+
+.history-ct {display: block;}
 #history-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
 #history-ct-tit:before {content: ""; display: inline-block; width: 5px; height: 5px; margin: 10px 12px 0 0; border-radius: 50%; background: #0f0f0f; vertical-align: top;}
 
@@ -238,7 +240,7 @@
 .history-box .substance .text:before {content: "-"; display: block; position: absolute; top: 7px; left: 0; z-index: 1; font-size: 16px; font-weight: 300; color: #666; line-height: 1;}
 
 /* 세미나 현황 */
-.seminar-ct {margin-top: 60px;}
+.seminar-ct {display: none;}
 #seminar-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
 #seminar-ct-tit:before {content: ""; display: inline-block; width: 5px; height: 5px; margin: 10px 12px 0 0; border-radius: 50%; background: #0f0f0f; vertical-align: top;}
 

@@ -30,7 +30,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
     </div>
 
     <!-- 연혁 { -->
-    <div class="history-ct">
+    <div class="hissemi-ct history-ct">
       <div class="container">
         <div class="wrapper">
           <div class="inner">
@@ -223,7 +223,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 
 
     <!-- KTLA 세미나 현황 { -->
-    <div class="seminar-ct">
+    <div class="hissemi-ct seminar-ct">
       <div class="container">
         <div class="wrapper">
           <div class="inner">
@@ -745,6 +745,526 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
                   </div>
                 </div>
               </div>
+              <div class="seminar-box">
+                <div class="year">1996년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;12월&gt; 겨울 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 도서관과 정보통신의 오늘과 내일 <br/>
+                    <b>[기간]</b> 1996.12.5(목) ~ 6(금) <br/>
+                    <b>[장소]</b> 횟불선교회관 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. 도서관(전자, 디지털, 멀티미디어)과 정보통신(김종은) <br/>
+                    2. 전자도서관 탐방(수원농대) <br/>
+                    3. 종합토의
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;10월&gt; 가을 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1996.10.11(금) <br/>
+                    <b>[장소]</b> 성결대학교 도서관 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. 한국신학관계 학위논문 CD-ROM 소개와 검색 S/W 데모 공개(채종준)
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;7월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 인터넷을 배웁시다 <br/>
+                    <b>[기간]</b> 1996.7.3(수) ~ 5(금) <br/>
+                    <b>[장소]</b> 성 이시돌 피정센타(제주도 한림읍 금악리)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1995년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;11월&gt; 겨울 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1995.11.23(목) ~ 24(금) <br/>
+                    <b>[장소]</b> 유성온천 만년회관 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. 도서관 전산화 사례발표(5개교 선정) <br/>
+                    2. 사례발표에 따른 토론 <br/>
+                    3. 전산화 구상 도서관 발표 <br/>
+                    4. 전산화에 따른 상호 정보 교환
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;7월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1995.7.11(화) ~ 14(금) <br/>
+                    <b>[장소]</b> 침례신학대학교 도서관 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. 신도협 Network 망의 실현가능성(KCM-한국과학기술정보센타) <br/>
+                    2. 인터넷 현황과 사용방법(POWERNET) <br/>
+                    3. LAN과 도서관 전산화의 관계(침신대) <br/>
+                    4. CD와 LAN과의 만남, 네트망과 Practice(경일시스템) <br/>
+                    5. rhdwndx공중통신망 활용계획(성서공회) <br/>
+                    6. 인터넷 워크숍 <br/>
+                    7. 도서관전산화 사례발표 <br/>
+                    8. 침신대 도서관 견학 <br/>
+                    9. 분임토의 및 종합토의
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;5월&gt; 전산 실무 대표자 회의</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1995.5.19(금) 오전 10:00 <br/>
+                    <b>[장소]</b> 가톨릭대학교 신학부 도서관 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. 전산 정보개발위원회 구성 및 공동사업 추진
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;4월&gt; 춘계 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1995.4.27(목) ~ 28(금) <br/>
+                    <b>[장소]</b> 고려신학교 경향 수양관 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. 정기간행물 Marc Format 훈련
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;1월&gt; 겨울 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1995.1.24(화) ~ 26(목) <br/>
+                    <b>[장소]</b> 성 도미니코 수도원 피정의 집(강원도 횡성) <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. Network에 있어서 공동 DB에 대해서(정한영 사장) <br/>
+                    2. 신도협 장단기 사업계획 수립을 위한 발제(김영수 과장) <br/>
+                    3. 95년도 공동사업의 전망과 과제(권길웅 과장) <br/>
+                    4. 그룹토의 및 종합토의
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1994년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;7월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> Kormarc 훈련 및 Union D.B.를 위한 통일안 <br/>
+                    <b>[기간]</b> 1994.7.5(화) ~ 8(금) <br/>
+                    <b>[장소]</b> 무주 리조트<br/>
+                    <b>[주제 강의]</b> <br/>
+                    발제 강의 : 박진희 부장(성서공회)<br/>
+                    Tag Workshop(1) 01X-09X<br/>
+                    UMI Guide<br/>
+                    그룹토의 :<br/>
+                    1. 신도협 활성화 가톨릭 모임<br/>
+                    2. Kormarc 기술규칙<br/>
+                    3. 도서관상호대차<br/>
+                    4. 신학용어 통일안<br/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1993년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;7월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 도서관 전산화 <br/>
+                    <b>[기간]</b> 7월13일(화) ~ 16일(금) <br/>
+                    <b>[장소]</b> 강원도 설악산 대명콘도 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. 안계성 : 신학도서관 전산화를 위한 시스템 선정(개발)접근방법 <br/>
+                    <b>[사례 발표]</b> <br/>
+                    1. 성결교 신학대학 도서관 <br/>
+                    2. 총신대학 도서관 <br/>
+                    3. 대전침신대학 도서관 <br/>
+                    4. 장로회 신학대학 도서관 <br/>
+                    5. 서울가톨릭대학 신학부
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1992년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;12월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1992.12.9 ~ 11 <br/>
+                    <b>[장소]</b> 대전 유성 경하장
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1991년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;12월&gt; 겨울 세미나</div>
+                    <div class="expl">
+                    김성렬, 외국업무 수서업무
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1990년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;7월&gt; 실무자 세미나<br/>(여름세미나)</div>
+                    <div class="expl">
+                    <b>[주제]</b> 참고봉사, 비도서자료 관리 <br/>
+                    <b>[기간]</b> 1990.7.18 ~ 20 <br/>
+                    <b>[장소]</b> 부곡관광호텔<br/>
+                    <b>[강사]</b> * WORKSHOP
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;4월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 참고봉사 실무 <br/>
+                    <b>[기간]</b> 1990.4.19 ~ 20 <br/>
+                    <b>[장소]</b> 엠마오서적 세미나실 <br/>
+                    <b>[강사]</b> 김효정 교수(중앙대 도서관학과) <br/>
+                    <b>[부주제]</b> 신도협 도서관 전산망 교육실시(T.L.N.S)
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;1월&gt; 신학사서교육 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 신도협 도서관 전산망 교육실시(T.L.N.S 설명)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1989년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;12월&gt; 실무자 세미나<br/>(겨울세미나)</div>
+                    <div class="expl">
+                    <b>[주제]</b> 한국신학대학도서관 수서정책에 관한 연구발표 <br/>
+                    <b>[기간]</b> 1989.12.15 ~ 16 <br/>
+                    <b>[장소]</b> 부산해운대한국콘도미니엄 <br/>
+                    <b>[강사]</b> 양유식 선생(대신대 도서관)
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;10월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 도서관 전산화 실무(PC를 통한 도서관 실무) <br/>
+                    <b>[기간]</b> 1989.10.12 <br/>
+                    <b>[장소]</b> 장로회신학대학 <br/>
+                    <b>[강사]</b> 박경화 선생(인하대학교 도서관)
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;8월&gt; 실무자 세미나<br/>(여름세미나)</div>
+                    <div class="expl">
+                    <b>[주제]</b> 대출, 열람, 서고 관리를 위한 공동연구 <br/>
+                    <b>[기간]</b> 1989.8.9 ~ 11 <br/>
+                    <b>[장소]</b> 선데이 비치 산장 <br/>
+                    <b>[강사]</b> 박희영 선생
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;4월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 정기간행물 및 업무에 관하여 <br/>
+                    <b>[기간]</b> 1989.4.10 <br/>
+                    <b>[장소]</b> 수원가톨릭대학도서관 <br/>
+                    <b>[강사]</b> 김경일 국장(한국도서관협회)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1988년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;12월&gt; 겨울세미나<br/>(정기총회와 함께) </div>
+                    <div class="expl">
+                    <b>[주제]</b> DDC 19판 종교분야 <br/>
+                    <b>[기간]</b> 1988.12.14 <br/>
+                    <b>[장소]</b> 한국교회10주년 기념관 <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. DDC 19판 종교분야 발표 및 토의
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;10월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 학술정보 자료 업무와 봉사 <br/>
+                    <b>[기간]</b> 1988.10.10 <br/>
+                    <b>[장소]</b> 대한신학교 도서관 <br/>
+                    <b>[강사</b> 이무근 부장
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;8월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 도서관 업무 전산화를 위한 공동 연구 <br/>
+                    <b>[기간]</b> 1988.8.3 ~ 5 <br/>
+                    <b>[장소]</b> 내장산 관광호텔 <br/>
+                    <b>[강의 및 강사]</b> <br/> 
+                    조원호 실장, 강동전자 S/W 개발부, 삼성반도체 컴퓨터 사업부
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;6월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 효과적인 수서업무와 대출업무 <br/>
+                    <b>[기간]</b> 1988.6.21 <br/>
+                    <b>[장소]</b> 성결교신학교 도서관 <br/>
+                    <b>[강사]</b> 권길웅 과장
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;4월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 목록에 관한 세미나 <br/>
+                    <b>[기간]</b> 1988.4.25 ~ 26 <br/>
+                    <b>[장소]</b> 서울신학대학 도서관 <br/>
+                    <b>[강사]</b> 김영미 주임
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1987년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;10월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 도서관 전산화 사례발표 <br/>
+                    <b>[기간]</b> 1987.10.13 <br/>
+                    <b>[장소]</b> 요단기독교서적센타 세미나실 <br/>
+                    <b>[강사]</b> 이세웅(현대사회연구소 자료실)
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;8월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 분류체계 현황과 한국신학도서관 분류통일안 연구 <br/>
+                    <b>[기간]</b> 1987.8.12 ~ 14 <br/>
+                    <b>[장소]</b> 수안보 로얄호텔
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;5월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 시청각 자료 관리와 봉사 <br/>
+                    <b>[기간]</b> 1987.5.12 <br/>
+                    <b>[장소]</b> 요단기독교서적센타 세미나실 <br/>
+                    <b>[강사]</b> 최지운 교수(숭전대학교 시청각교육원장)
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;2월&gt; 도서관 강좌</div>
+                    <div class="expl">
+                    <b>[주제]</b> 분류와 목록 <br/>
+                    <b>[기간]</b> 1987.2.16 ~ 19 <br/>
+                    <b>[장소]</b> 장로회신학대학 선교관 <br/>
+                    <b>[강사]</b> <br/>
+                    이우범 교수(한성대 도서관학과) <br/>
+                    김명옥 교수(숭의여전 도서관학과) <br/>
+                    정기덕 교수(장로회신학대학 도서관장)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1986년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;8월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1986.8.12 ~ 14 <br/>
+                    <b>[장소]</b> 성 베네딕도 피정의 집(경북 왜관)
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;6월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[기간]</b> 1986.6.30 <br/>
+                    <b>[장소]</b> 아세아연합신학대학(양평)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1984년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;3월&gt; 춘계 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 대 공중 업무로써의 대출 제도 및 업무 내용에 관하여 <br/>
+                    <b>[기간]</b> 1984.3.29 <br/>
+                    <b>[장소]</b> 반도 유스호스텔 세미나실 <br/>
+                    <b>[강사]</b> 윤치경 교수(대한신학교 도서관장)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1983년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;12월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 신학도서관 자료 수서와 목록 연구
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;10월&gt; 실무자 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 신학자료 분류 연구 <br/>
+                    <b>[기간]</b> 1983.10.7 <br/>
+                    <b>[장소]</b> 대한신학교
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;8월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 신학도서관의 수서현황과 공동수서의 모색 <br/>
+                    <b>[기간]</b> 1983.8.8 ~ 10 <br/>
+                    <b>[장소]</b> 고신대학 <br/>
+                    <b>[강의 및 강사]</b> <br/> 
+                    1. 주제강연 : 한태동 박사 <br/>
+                    - 상호 유기관계로 인한 자료교환 문제 <br/>
+                    - Classification 에서의 DDC 사용문제 <br/>
+                    - 운영법상의 문제 - 토의
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;3월&gt; 세미나</div>
+                    <div class="expl">현규섭, 도서관 자동화업무의 현황</div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1982년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;8월&gt; 여름 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> 한국신학대학 도서관의 실태와상호 이용에 관한 문제 <br/>
+                    <b>[기간]</b> 1982.8.11 ~ 13 <br/>
+                    <b>[장소]</b> 한국신학도서관협의회 <br/>
+                    <b>[강의 및 강사]</b> <br/>
+                    1. 김영수, 한국 신학대학 도서관의 실태 <br/>
+                    2. 윤치경, 도서관 상호대차에 관하여
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1981년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;7월&gt; 세미나</div>
+                    <div class="expl">
+                    <b>[강의 및 강사]</b> <br/>
+                    1. 이재철, 주제목록의 제 문제점 <br/>
+                    2. 이재철, 주제색인의 작성
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1977년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;7월&gt; 제1회 연수회</div>
+                    <div class="expl">
+                    <b>[주제]</b> 한국신학도서관의 현재와 미래) <br/>
+                    <b>[기간]</b> 1977.7.14 ~ 15 <br/>
+                    <b>[장소]</b> 장로회 신학대학 <br/>
+                    <b>[강의 및 강사]</b> <br/>
+                    1. 각 신학도서관 현황과 실무(보고) <br/>
+                    2. 주제발표(조직 및 관리, 수서, 정리) <br/>
+                    3. 세계의 도서관 동향과 미래
+                    </div>
+                  </div>
+                  <div class="substance">
+                    <div class="title">&lt;3월&gt; 도서관실무자 세미나<br/>(정기총회와 함께)</div>
+                    <div class="expl">
+                    <b>[주제]</b> 내가 본 한국신학도서관 <br/>
+                    <b>[기간]</b> 1977.3.9 <br/>
+                    <b>[장소]</b> 서울신학대학 도서관 세미나실 <br/>
+                    <b>[강의 및 강사]</b> <br/>
+                    - 주제강연 : 하도례 선교사 <br/>
+                    - 도서관의 기능과 요소 <br/>
+                    - 도서관의 목적 <br/>
+                    이상의 문제점과 실질적인 제안과 토의가 있었음
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1976년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;3월&gt; 도서관실무자 세미나<br/>(임시총회와 함께)</div>
+                    <div class="expl">
+                    <b>[주제]</b> 도서관의 제 문제 <br/>
+                    <b>[기간]</b> 1976.3.26 <br/>
+                    <b>[장소]</b> 연세대학교 중앙도서관 세미나실 <br/>
+                    <b>[강의 및 강사]</b> <br/>
+                    - 주제강연 : 한태동 박사 <br/>
+                    - 상호 유기관계로 인한 자료교환 문제 <br/>
+                    - Classification 에서의 DDC 사용문제 <br/>
+                    - 운영법상의 문제 - 토의
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="seminar-box">
+                <div class="year">1973년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;4월&gt; 도서관실무자 세미나<br/>(창립총회와 함께)</div>
+                    <div class="expl">
+                    <b>[주제]</b> 신학교육과 도서관 <br/>
+                    <b>[기간]</b> 1973.4.16 <br/>
+                    <b>[장소]</b> 감신대 선교대학원 세미나실 <br/>
+                    <b>[강의 및 강사]</b> <br/>
+                    - 사회 : 탁종주 사서(장신대) <br/>
+                    - 교수면에서 신학교육과 도서관 : 이상훈 교수(서울신대) <br/>
+                    - 실무면에서 신학교육과 도서관 : 김창의 사서장(총신대) <br/>
+                    - 토론 : 지도 허긴 도서관장(침신대)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- 세미나 양식 { 
+              <div class="seminar-box">
+                <div class="year">1996년</div>
+                <div class="seminar-group">
+                  <div class="substance">
+                    <div class="title">&lt;12월&gt; 겨울 세미나</div>
+                    <div class="expl">
+                    <b>[주제]</b> <br/>
+                    <b>[기간]</b> <br/>
+                    <b>[장소]</b> <br/>
+                    <b>[주제 강의]</b> <br/>
+                    1. <br/>
+                    2. <br/>
+                    3. <br/>
+                    4. <br/>
+                    5. <br/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              } 세미나 양식 -->
+
+
               
             </div>
           </div>

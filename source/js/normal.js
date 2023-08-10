@@ -99,4 +99,14 @@ $(document).ready(function(){
     scrollValue = $(document).scrollTop(); 
     scrollHeader(scrollValue);
   });
+
+  //신대도협소개 > 연혁/세미나현황 탭
+  const hisSemiTab = ".history-tab-btn";
+  const hisSemiTabCt = ".hissemi-ct";
+  $(hisSemiTab).on('click', function(){
+    let hisSemiTabIndex = $(this).index();
+
+    $(this).addClass('act').siblings(hisSemiTab).removeClass('act');
+    $(hisSemiTabCt).eq(hisSemiTabIndex).fadeIn(200).siblings(hisSemiTabCt).hide();
+  })
 });
