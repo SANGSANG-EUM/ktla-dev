@@ -168,6 +168,15 @@
 .btn_wrap .btn_box {text-align: center;}
 .btn_wrap .btn_box .btn {max-width: 300px; width: 100%; border-radius: 5px; font-weight: 500; font-size: 20px; color: #fff; text-align: center; background-color: #2EA9A9; display: inline-block; height: 70px; line-height: 70px;}
 
+.sub-tab {}
+.sub-tab .inner {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center; gap: 10px 40px;}
+.sub-tab-btn {display: block; position: relative; border: 0; font-size: 18px; font-weight: 500; color: #ccc; background: #fff;}
+.sub-tab-btn:after {content: ""; display: block; position: absolute; top: 50%; left: -20px; z-index: 1; height: 16px; margin-top: -8px; border-left: 1px solid #eee;}
+.sub-tab-btn:first-child:after {display: none;}
+.sub-tab-btn.act {font-weight: 600; color: #2ea9a9;}
+.sub-tab-btn:not(.act):hover {color: #333;}
+.sub-tab-ct {}
+
 /* 협회 안내 */
 .aboutus-banner {margin-bottom: 70px; font-size: 0; text-align: right;}
 .aboutus-banner-img {display: inline-block; overflow: hidden; width: calc(50% + 640px); max-width: 100%; height: 500px; border-radius: 100px 0 0 0; background: url('/ktla-dev/source/img/aboutus-banner.jpg') no-repeat bottom center/cover;}
@@ -213,14 +222,6 @@
 #executive-ct-tb tbody td .person_wrap .person:first-child:before {display: none;}
 
 /* 연혁 */
-.history-tab {}
-.history-tab .inner {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center; gap: 10px 40px;}
-.history-tab-btn {display: block; position: relative; border: 0; font-size: 18px; font-weight: 500; color: #ccc; background: #fff;}
-.history-tab-btn:after {content: ""; display: block; position: absolute; top: 50%; left: -20px; z-index: 1; height: 16px; margin-top: -8px; border-left: 1px solid #eee;}
-.history-tab-btn:first-child:after {display: none;}
-.history-tab-btn.act {font-weight: 600; color: #2ea9a9;}
-.history-tab-btn:not(.act):hover {color: #333;}
-
 .hissemi-ct {margin-top: 60px;}
 
 .history-ct {display: block;}
@@ -246,7 +247,7 @@
 
 .seminar-ct_wrap {margin-top: 15px; border-top: 2px solid #666;}
 .seminar-box {border-bottom: 1px solid #d9d9d9;}
-.seminar-box .year {height: 90px; line-height: 90px; padding-left: 30px; font-size: 20px; font-weight: 500; color: #333; background: #fff url('/ktla-dev/source/img/arrow-down-black.svg') no-repeat center right 26px/16px auto;}
+.seminar-box .year {height: 90px; line-height: 90px; padding-left: 30px; font-size: 20px; font-weight: 500; color: #333; background: #fff url('/ktla-dev/source/img/arrow-down-black.svg') no-repeat center right 26px/16px auto; cursor: pointer;}
 .seminar-box .seminar-group {display: none; padding: 0 60px; background: #fafafa;}
 .seminar-group .substance {display: flex; position: relative; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; padding: 40px 0; border-top: 1px solid #d9d9d9;}
 .seminar-group .substance:first-child {border-top: 0;}
@@ -258,6 +259,25 @@
 .seminar-box.act .seminar-group {}
 
 /* 회칙 */
+.rules-ct {margin-top: 60px; padding: 70px 0; background: #fafafa;}
+.rules-ct_wrap {min-height: 500px; padding: 40px 60px 60px; background: #fff;}
+.rules-box {margin-top: 74px;}
+.rules-box:first-child {margin-top: 0;}
+
+.rules-paragraph {margin-top: 17px; padding: 0 10px;}
+.rules-paragraph .depth1 {}
+.rules-paragraph .depth2 {margin-top: 8px;}
+.rules-paragraph .depth3 {padding: 16px 0 8px 10px;}
+
+.rules-tit {margin-bottom: 30px; padding: 0 10px 18px; border-bottom: 2px solid #666; font-size: 30px; font-weight: 700; color: #0f0f0f; line-height: auto;}
+.rules-txt1 {font-size: 16px; font-weight: 400; color: #333; line-height: auto;}
+.rules-txt2 {font-size: 16px; font-weight: 300; color: #666; line-height: 1.75;}
+.rules-txt2.indent {padding-left: 17px; text-indent: -17px;}
+
+.rules-general-ct {display: block;}
+
+.rules-commendation-ct {display: none;}
+
 
 /* 참가안내 */
 .participation_method_list {border-top: 2px solid #666; border-bottom: 2px solid #666;}

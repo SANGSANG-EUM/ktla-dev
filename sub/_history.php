@@ -18,25 +18,24 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
         </div>
       </div>
     </div>
-    <div class="history-tab">
+    <div class="sub-tab">
       <div class="container">
         <div class="wrapper">
           <div class="inner">
-            <button type="button" class="history-tab-btn act">연혁</button>
-            <button type="button" class="history-tab-btn">KTLA 세미나 현황</button>
+            <button type="button" class="sub-tab-btn act">연혁</button>
+            <button type="button" class="sub-tab-btn">KTLA 세미나 현황</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- 연혁 { -->
-    <div class="hissemi-ct history-ct">
+    <div class="sub-tab-ct hissemi-ct history-ct">
       <div class="container">
         <div class="wrapper">
           <div class="inner">
             <p id="history-ct-tit">신대도협 연혁</p>
             <div class="history-ct_wrap">
-
               <div class="history-box">
                 <div class="year">2023년</div>
                 <div class="substance">
@@ -221,9 +220,8 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
     </div>
     <!-- } 연혁 -->
 
-
     <!-- KTLA 세미나 현황 { -->
-    <div class="hissemi-ct seminar-ct">
+    <div class="sub-tab-ct hissemi-ct seminar-ct">
       <div class="container">
         <div class="wrapper">
           <div class="inner">
