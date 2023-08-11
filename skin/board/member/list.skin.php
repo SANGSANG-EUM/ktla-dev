@@ -14,7 +14,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <div id="notice_list" class="sub notice contents_wrap">
-  <?php sub_top($sb_menus, 'cs', 'notice'); ?>
+  <?php sub_top($sb_menus, 'community', 'notice'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">
@@ -188,7 +188,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                       </ul>
                     </div>
                   </td>
-                  <!-- <td class="td_name"><?php echo $list[$i]['name'] ?></td> -->
+                  <td class="td_name"><?php echo $list[$i]['name'] ?></td>
                   <!-- <td class="td_num"><?php echo $list[$i]['wr_hit'] ?></td> -->
                   <td class="td_datetime"><?php echo date("Y-m-d", strtotime($list[$i]['wr_datetime'])) ?></td>
                 </tr>

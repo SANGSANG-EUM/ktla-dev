@@ -30,6 +30,12 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 
       <div class="bo_vc_w_wr">
         <ul class="i-col-0 bo_vc_w_info">
+          <li class="secret_cm_li">
+            <span class="secret_cm chk_box">
+              <input type="checkbox" name="wr_secret" value="secret" id="wr_secret" class="selec_chk">
+              <label for="wr_secret"><span></span>비밀글</label>
+            </span>
+          </li>
           <?php if ($is_guest) { ?>
           <li>
             <label for="wr_name" class="sound_only">이름<strong> 필수</strong></label>
@@ -40,12 +46,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
             <input type="password" name="wr_password" id="wr_password" required class="frm_input required" size="25" placeholder="비밀번호">
           </li>
           <?php } ?>
-          <li>
-            <span class="secret_cm chk_box">
-              <input type="checkbox" name="wr_secret" value="secret" id="wr_secret" class="selec_chk">
-              <label for="wr_secret"><span></span>비밀글</label>
-            </span>
-          </li>
+          
         </ul>
       </div>
 

@@ -6,9 +6,9 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<div id="faq_write" class="sub faq">
-  <?php sub_top($sb_menus, 'cs', 'faq'); ?>
-
+<div id="notice_write" class="sub notice">
+  <?php sub_top($sb_menus, 'community', 'notice'); ?>
+  
   <!-- sub contents { -->
   <div class="container sub_contents">
     <div class="wrapper">
@@ -91,7 +91,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
           </div>
 
           <?php if ($option) { ?>
-          <div class="write_div write_opt_div">
+          <div class="write_div">
             <span class="sound_only">옵션</span>
             <ul class="bo_v_option">
               <?php echo $option ?>
@@ -132,14 +132,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             </div>
           </div>
 
-          <?php for ($i=1; $is_link && $i<=0; $i++) { ?>
+          <?php for ($i=1; $is_link && $i<=G5_LINK_COUNT; $i++) { ?>
           <div class="bo_w_link write_div">
             <label for="wr_link<?php echo $i ?>"><i class="fa fa-link" aria-hidden="true"></i><span class="sound_only"> 링크  #<?php echo $i ?></span></label>
             <input type="text" name="wr_link<?php echo $i ?>" value="<?php if($w=="u"){ echo $write['wr_link'.$i]; } ?>" id="wr_link<?php echo $i ?>" class="frm_input full_input" size="50">
           </div>
           <?php } ?>
 
-          <?php for ($i=0; $is_file && $i<0; $i++) { ?>
+          <?php for ($i=0; $is_file && $i<$file_count; $i++) { ?>
           <div class="bo_w_flie write_div">
             <div class="file_wr write_div">
               <label for="bf_file_<?php echo $i+1 ?>" class="lb_icon"><i class="fa fa-folder-open" aria-hidden="true"></i><span class="sound_only"> 파일 #<?php echo $i+1 ?></span></label>

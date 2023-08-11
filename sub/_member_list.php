@@ -365,8 +365,6 @@ class KoreanIndex {
 
 const koIndex = new KoreanIndex(member);
 
-
-
 // 배열을 이름으로 정렬
 document.addEventListener('DOMContentLoaded', () => {
   const categoryButtons = document.querySelectorAll('.consonant_category_ul li button');

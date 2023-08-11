@@ -51,10 +51,10 @@ $sb_menus = [
         'link' => '/ktla-dev/sub/member_list'
       ],
       [
-        'id' => '',
+        'id' => 'book',
         'name' => '신도협 편람',
         'name_eng' => 'KTLA handbook',
-        'link' => ''
+        'link' => '/ktla-dev/book'
       ]
     ]
   ],
@@ -80,7 +80,7 @@ $sb_menus = [
         'id' => 'library',
         'name' => '자료실',
         'name_eng' => 'Reference Library',
-        'link' => ''
+        'link' => '/ktla-dev/library'
       ],
       [
         'id' => 'picture',
@@ -92,7 +92,7 @@ $sb_menus = [
         'id' => 'membership',
         'name' => '회원게시판',
         'name_eng' => 'Membership Board',
-        'link' => ''
+        'link' => '/ktla-dev/member'
       ],
       [
         'id' => 'notice',

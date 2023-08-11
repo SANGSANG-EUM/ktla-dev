@@ -9,8 +9,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
-<div id="qa_view" class="sub qa">
-  <?php sub_top($sb_menus, 'cs', 'qa'); ?>
+<div id="book_view" class="sub book">
+  <?php sub_top($sb_menus, 'organization', 'book'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">
@@ -34,6 +34,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                   <strong>
                     <i class="fa fa-user-o" aria-hidden="true"></i>
                     <?php echo $view['name'] ?>
+                  </strong>
+                </li>
+                <li>
+                  <span class="sound_only">댓글</span>
+                  <strong>
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    <?php echo number_format($view['wr_comment']) ?>건
                   </strong>
                 </li>
                 <li>
@@ -123,9 +130,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
           <h2 id="bo_v_atc_title">본문</h2>
           <!-- 본문 내용 시작 { -->
           <div id="bo_v_con">
-            작성자 : <?php echo $view['wr_name'];?><br>
-            이메일 : <?php echo $view['wr_email'];?><br>
-            전화번호 : <?php echo $view['wr_homepage'];?><br><br>
             <?php echo get_view_thumbnail($view['content']); ?>
           </div>
           <!-- } 본문 내용 끝 -->
@@ -136,6 +140,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
           <?php ob_start(); ?>
 
           <ul class="btn_bo_user bo_v_com">
+            <?php if ($reply_href) { ?>
+            <li>
+              <a href="<?php echo $reply_href ?>" class="bo_btn2">답변</a>
+            </li>
+            <?php } ?>
+            <?php if ($copy_href) { ?>
+            <li>
+              <a href="<?php echo $copy_href ?>" class="bo_btn2" onclick="board_move(this.href); return false;">복사</a>
+            </li>
+            <?php } ?>
+            <?php if ($move_href) { ?>
+            <li>
+              <a href="<?php echo $move_href ?>" class="bo_btn2" onclick="board_move(this.href); return false;">이동</a>
+            </li>
+            <?php } ?>
             <?php if ($update_href) { ?>
             <li>
               <a href="<?php echo $update_href ?>" class="bo_btn2">수정</a>
@@ -157,27 +176,33 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <!-- 게시글 이동 버튼 { -->
         <div id="bo_v_oth">
           <a href="<?php echo $list_href ?>" class="bo_v_back_btn">LIST</a>
-
-          <?php if ($prev_href || $next_href) { ?>
-          <ul class="i-col-0 bo_v_nb">
-            <?php if ($prev_href) { ?>
-            <li class="btn_prv">
-              <a href="<?php echo $prev_href ?>" class="bo_v_nb_btn bo_v_nb_prev">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>이전글
-              </a>
-            </li>
-            <?php } ?>
-            <?php if ($next_href) { ?>
-            <li class="btn_next">
-              <a href="<?php echo $next_href ?>" class="bo_v_nb_btn bo_v_nb_next">
-                다음글<i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </a>
-            </li>
-            <?php } ?>
-          </ul>
-          <?php } ?>
         </div>
         <!-- } 게시글 이동 버튼 -->
+
+        <?php if ($prev_href || $next_href) { ?>
+        <ul class="i-col-0 bo_v_nb">
+          <?php if ($prev_href) { ?>
+          <li class="btn_prv">
+            <a href="<?php echo $prev_href ?>" class="bo_v_nb_btn bo_v_nb_prev">
+              <span class="left">이전글</span>
+              <span class="right"><?php echo $prev_wr_subject;?></span>
+            </a>
+          </li>
+          <?php } ?>
+          <?php if ($next_href) { ?>
+          <li class="btn_next">
+            <a href="<?php echo $next_href ?>" class="bo_v_nb_btn bo_v_nb_next">
+              <span class="left">다음글</span>
+              <span class="right"><?php echo $next_wr_subject;?></span>
+            </a>
+          </li>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+
+        <!-- 댓글 영역 { -->
+        <?php //include_once(G5_BBS_PATH.'/view_comment.php'); ?>
+        <!-- } 댓글 영역 -->
       </article>
       <!-- } 게시판 읽기 끝 -->
 
