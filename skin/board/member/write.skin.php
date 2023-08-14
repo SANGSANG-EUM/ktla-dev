@@ -6,8 +6,8 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<div id="notice_write" class="sub notice">
-  <?php sub_top($sb_menus, 'community', 'notice'); ?>
+<div id="membership_write" class="sub membership">
+  <?php sub_top($sb_menus, 'community', 'membership'); ?>
   
   <!-- sub contents { -->
   <div class="container sub_contents">

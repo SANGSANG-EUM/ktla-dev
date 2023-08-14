@@ -13,8 +13,8 @@ if ($is_nogood) $colspan++;
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<div id="notice_list" class="sub notice contents_wrap">
-  <?php sub_top($sb_menus, 'community', 'notice'); ?>
+<div id="library_list" class="sub library contents_wrap">
+  <?php sub_top($sb_menus, 'community', 'library'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">

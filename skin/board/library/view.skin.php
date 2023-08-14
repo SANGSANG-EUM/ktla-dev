@@ -9,8 +9,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
-<div id="notice_view" class="sub notice">
-  <?php sub_top($sb_menus, 'community', 'notice'); ?>
+<div id="library_view" class="sub library">
+  <?php sub_top($sb_menus, 'community', 'library'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">

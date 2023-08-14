@@ -37,6 +37,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
             <li><button data-sort="ㅊ">ㅊ</button></li>
             <li><button data-sort="ㅋ">ㅋ</button></li>
             <li><button data-sort="ㅌ">ㅌ</button></li>
+            <li><button data-sort="ㅍ">ㅍ</button></li>
             <li><button data-sort="ㅎ">ㅎ</button></li>
           </ul>
         </div>
@@ -367,7 +368,7 @@ const koIndex = new KoreanIndex(member);
 
 // 배열을 이름으로 정렬
 document.addEventListener('DOMContentLoaded', () => {
-  const categoryButtons = document.querySelectorAll('.consonant_category_ul li button');
+  const categoryButtons = document.querySelectorAll('#member_list .consonant_category_ul li button');
   
   categoryButtons.forEach(button => {
     button.addEventListener('click', (e) => {

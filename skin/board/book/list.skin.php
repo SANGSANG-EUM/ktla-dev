@@ -9,6 +9,8 @@ if ($is_checkbox) $colspan++;
 if ($is_good) $colspan++;
 if ($is_nogood) $colspan++;
 
+add_javascript('<script type="module" src="'.$board_skin_url.'/ajax.index.js" defer></script>', 0);
+
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
@@ -23,26 +25,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
       <!-- Sub Title { -->
       <div class="sub_title_box">
         <p class="sub_title">
-          한국신학대학도서관협의회는 다양한 활동을 <br>
-          통해 <span class="bold">유대를 강화</span>합니다.
+          한국신학대학도서관협의회와 함께하는 <br/>
+          <span class="bold">회원교 편람</span>을 소개합니다.
         </p>
       </div>
       <!-- } Sub Title -->
 
       <!-- 게시판 목록 시작 { -->
       <div id="bo_list" style="width:<?php echo $width; ?>">
-
-        <!-- 게시판 카테고리 시작 { -->
-        <?php if ($is_category) { ?>
-        <nav id="bo_cate">
-          <h2><?php echo $board['bo_subject'] ?> 카테고리</h2>
-          <ul id="bo_cate_ul">
-            <?php echo $category_option ?>
-          </ul>
-        </nav>
-        <?php } ?>
-        <!-- } 게시판 카테고리 끝 -->
-        
         <div class="bo_top_info">
           <!-- 게시판 페이지 정보 { -->
           <div id="bo_list_total">
@@ -87,6 +77,36 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
           </div>
           <!-- } 게시판 검색 끝 --> 
         </div>
+
+        <!-- 게시판 카테고리 시작 { -->
+        <?php if ($is_category) { ?>
+        <nav id="bo_cate">
+          <h2><?php echo $board['bo_subject'] ?> 카테고리</h2>
+          <ul id="bo_cate_ul">
+            <?php echo $category_option ?>
+          </ul>
+        </nav>
+        <?php } ?>
+        <!-- } 게시판 카테고리 끝 -->
+
+        <div class="consonant_category_wrap">
+          <ul class="i-col-0 consonant_category_ul">
+            <li><a href="/ktla-dev/book" class="active">전체</a></li>
+            <li><button data-sort="ㄱ" onclick="BoardDataIndex('ㄱ', event)">ㄱ</button></li>
+            <li><button data-sort="ㄴ" onclick="BoardDataIndex('ㄴ', event)">ㄴ</button></li>
+            <li><button data-sort="ㄷ" onclick="BoardDataIndex('ㄷ', event)">ㄷ</button></li>
+            <li><button data-sort="ㄹ" onclick="BoardDataIndex('ㄹ', event)">ㄹ</button></li>
+            <li><button data-sort="ㅁ" onclick="BoardDataIndex('ㅁ', event)">ㅁ</button></li>
+            <li><button data-sort="ㅂ" onclick="BoardDataIndex('ㅂ', event)">ㅂ</button></li>
+            <li><button data-sort="ㅅ" onclick="BoardDataIndex('ㅅ', event)">ㅅ</button></li>
+            <li><button data-sort="ㅇ" onclick="BoardDataIndex('ㅇ', event)">ㅇ</button></li>
+            <li><button data-sort="ㅈ" onclick="BoardDataIndex('ㅈ', event)">ㅈ</button></li>
+            <li><button data-sort="ㅊ" onclick="BoardDataIndex('ㅊ', event)">ㅊ</button></li>
+            <li><button data-sort="ㅋ" onclick="BoardDataIndex('ㅋ', event)">ㅋ</button></li>
+            <li><button data-sort="ㅌ" onclick="BoardDataIndex('ㅌ', event)">ㅌ</button></li>
+            <li><button data-sort="ㅎ" onclick="BoardDataIndex('ㅎ', event)">ㅎ</button></li>
+          </ul>
+        </div>
         
         <form name="fboardlist" id="fboardlist" action="<?php echo G5_BBS_URL; ?>/board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
           <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
@@ -120,7 +140,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                   <th scope="col"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜  </a></th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="bo_tb_body">
                 <?php for ($i=0; $i<count($list); $i++) { ?>
                 <tr class="<?php if ($list[$i]['is_notice']) echo "bo_notice"; ?>">
                   <?php if ($is_checkbox) { ?>
@@ -236,6 +256,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
   </div>
   <!-- } sub contents -->
 </div>
+
 
 <?php if($is_checkbox) { ?>
 <noscript>

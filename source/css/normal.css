@@ -138,6 +138,7 @@
 .sb_top {}
 .sb_top.introduce_top {background: url('/ktla-dev/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
 .sb_top.organization_top {background: url('/ktla-dev/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
+.sb_top.publication_top {background: url('/ktla-dev/source/img/sb-top-bg-publication.jpg') no-repeat center/cover;}
 .sb_top.community_top {background: url('/ktla-dev/source/img/sb-top-bg-community.jpg') no-repeat center/cover;}
 .sb_top.seminar_top {background: url('/ktla-dev/source/img/sb-top-bg-seminar.jpg') no-repeat center/cover;}
 .sb_top.cs_top {background: slateblue;}
@@ -176,6 +177,11 @@
 .sub-tab-btn.act {font-weight: 600; color: #2ea9a9;}
 .sub-tab-btn:not(.act):hover {color: #333;}
 .sub-tab-ct {}
+
+.style-tb {width: 100%; border-top: 2px solid #666; border-bottom: 2px solid #666;}
+.style-tb thead th {font-size: 16px; font-weight: 500; color: #333; padding: 19px 0; background-color: #fafafa;}
+.style-tb tbody tr {border-top: 1px solid #eee;}
+.style-tb tbody td {font-size: 16px; font-weight: 300; color: #666; padding: 19px 0; background-color: #fff; text-align: center;}
 
 /* 협회 안내 */
 .aboutus-banner {margin-bottom: 70px; font-size: 0; text-align: right;}
@@ -278,6 +284,36 @@
 
 .rules-commendation-ct {display: none;}
 
+/* 회원교 명단 */
+.consonant_category_ul {margin: 0 -22px;}
+.consonant_category_ul li {padding: 0 22px; position: relative;}
+.consonant_category_ul li::after {content: ''; width: 1px;  height: 15px; background-color: #eee; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.consonant_category_ul li:last-child::after {display: none;}
+.consonant_category_ul li a, 
+.consonant_category_ul li button {display: block; font-weight: 500; font-size: 18px; color: #ccc; border: none; background-color: transparent;}
+.consonant_category_ul li a.active, 
+.consonant_category_ul li button.active {font-weight: 600; color: #2EA9A9;}
+
+.member_list_box {padding-top: 60px;}
+#member_list_ct {margin: -10px;}
+#member_list_ct li {padding: 10px;}
+.member_list_inner {border-radius: 10px; border: 1px solid #E6E6E6; padding: 29px 50px 30px;}
+.member_list_inner .title {font-weight: 500; font-size: 18px; color: #333; padding-bottom: 40px; position: relative;}
+.member_list_inner .title::before {content: ''; width: 18px; height: 2px; background-color: #666; position: absolute; bottom: 20px; left: 0;}
+.member_list_info {}
+.member_list_info_item {font-weight: 300; font-size: 16px; color: #666; line-height: 1.875;}
+.member_list_info_item.address::before {content: 'A.  '; font-weight: 400; font-size: 16px; color: #333;}
+.member_list_info_item.tel::before {content: 'T.  '; font-weight: 400; font-size: 16px; color: #333;}
+
+/* 출판물 */
+.publication-ct {display: block; margin-top: 60px;}
+#publication-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
+#publication-ct-tit:before {content: ""; display: inline-block; width: 5px; height: 5px; margin: 10px 12px 0 0; border-radius: 50%; background: #0f0f0f; vertical-align: top;}
+
+.publication-ct-list {margin-top: 60px;}
+.publication-ct-list:first-child {margin-top: 0;}
+.publication-ct_wrap {margin-top: 15px;}
+
 
 /* 참가안내 */
 .participation_method_list {border-top: 2px solid #666; border-bottom: 2px solid #666;}
@@ -341,22 +377,3 @@
 .regi_confirm_list table tbody tr td .td-btn-item::before {content: ''; width: 1px; height: 15px; background-color: #ccc; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
 .regi_confirm_list table tbody tr td .td-btn-item:first-child::before {display: none;}
 .regi_confirm_list table tbody tr td .td-btn-item .tb-btn {font-size: 16px; font-weight: 300; font-size: 16px; color: #999; border: none; background-color: transparent;}
-
-/* 회원교 명단 */
-.consonant_category_ul {margin: 0 -22px;}
-.consonant_category_ul li {padding: 0 22px; position: relative;}
-.consonant_category_ul li::after {content: ''; width: 1px;  height: 15px; background-color: #eee; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
-.consonant_category_ul li:last-child::after {display: none;}
-.consonant_category_ul li button {font-weight: 500; font-size: 18px; color: #ccc; border: none; background-color: transparent;}
-.consonant_category_ul li button.active {font-weight: 600; color: #2EA9A9;}
-
-.member_list_box {padding-top: 60px;}
-#member_list_ct {margin: -10px;}
-#member_list_ct li {padding: 10px;}
-.member_list_inner {border-radius: 10px; border: 1px solid #E6E6E6; padding: 29px 50px 30px;}
-.member_list_inner .title {font-weight: 500; font-size: 18px; color: #333; padding-bottom: 40px; position: relative;}
-.member_list_inner .title::before {content: ''; width: 18px; height: 2px; background-color: #666; position: absolute; bottom: 20px; left: 0;}
-.member_list_info {}
-.member_list_info_item {font-weight: 300; font-size: 16px; color: #666; line-height: 1.875;}
-.member_list_info_item.address::before {content: 'A.  '; font-weight: 400; font-size: 16px; color: #333;}
-.member_list_info_item.tel::before {content: 'T.  '; font-weight: 400; font-size: 16px; color: #333;}

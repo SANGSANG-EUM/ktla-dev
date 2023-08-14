@@ -35,6 +35,19 @@ const tabAddOnClass = (element, callback) => {
   }
 }
 
+const getParam = (sname) => {
+  let params = location.search.substr(location.search.indexOf("?") + 1);
+  let sval = "";
+  let temp = ""
+
+  params = params.split("&");
+  for (var i = 0; i < params.length; i++) {
+    temp = params[i].split("=");
+    if ([temp[0]] == sname) { sval = temp[1]; }
+  }
+  return sval;
+}
+
 /* > tabAddOnClass 예시 : 탭버튼 클릭시 data-id와 동일한 id를 가진 태그에 on 클래스 추가
 const tabButtons = document.querySelectorAll('.tab-btn');
 tabButtons.forEach(button => {
@@ -73,7 +86,7 @@ const mcScrollbar = (target_id) => {
   }
 }
 
-export { addZero, formatDate, tabAddOnClass, mcScrollbar };
+export { addZero, formatDate, tabAddOnClass, mcScrollbar, getParam };
 
 $(document).ready(function(){
   // [plugin-Match Height]

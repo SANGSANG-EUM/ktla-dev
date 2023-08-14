@@ -59,15 +59,15 @@ $sb_menus = [
     ]
   ],
   [
-    'id' => '',
+    'id' => 'publication',
     'name' => '출판물 소개',
-    'link' => '',
+    'link' => '/ktla-dev/sub/publication',
     'sb_2menus' => [
       [
-        'id' => '',
+        'id' => 'publication',
         'name' => '출판물',
         'name_eng' => 'Publication',
-        'link' => ''
+        'link' => '/ktla-dev/sub/publication'
       ]
     ]
   ],
