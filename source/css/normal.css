@@ -182,6 +182,9 @@
 .style-tb thead th {font-size: 16px; font-weight: 500; color: #333; padding: 19px 0; background-color: #fafafa;}
 .style-tb tbody tr {border-top: 1px solid #eee;}
 .style-tb tbody td {font-size: 16px; font-weight: 300; color: #666; padding: 19px 0; background-color: #fff; text-align: center;}
+.style-tb tbody td.ta_l {padding-left: 30px; text-align: left;}
+
+.style-tb.fix {table-layout: fixed;}
 
 /* 협회 안내 */
 .aboutus-banner {margin-bottom: 70px; font-size: 0; text-align: right;}
@@ -307,6 +310,7 @@
 
 /* 출판물 */
 .publication-ct {display: block; margin-top: 60px;}
+.publication-ct02 {display: none;}
 #publication-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
 #publication-ct-tit:before {content: ""; display: inline-block; width: 5px; height: 5px; margin: 10px 12px 0 0; border-radius: 50%; background: #0f0f0f; vertical-align: top;}
 
