@@ -58,7 +58,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
       <div class="container">
         <div class="wrapper">
           <div class="btn_box">
-            <a href="" class="btn">온라인 등록</a>
+            <a href="" class="i-btn1">온라인 등록</a>
           </div>
         </div>
       </div>

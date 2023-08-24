@@ -194,7 +194,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
       <div class="container">
         <div class="wrapper">
           <div class="btn_box">
-            <button class="btn">등록하기</button>
+            <button class="i-btn1">등록하기</button>
           </div>
         </div>
       </div>

@@ -23,10 +23,14 @@ include EUM_INCLUDE_PATH.'/menus.php';
 ?>
 
 <?php
+$pg_name = str_replace('.php', '', basename($_SERVER['PHP_SELF']));
+
 $header_style = "";
 if(defined('_INDEX_')) { // index에서만 실행
   $header_style = "";
   include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+} else if($pg_name == 'login' || $pg_name == 'register' || $pg_name == 'register_form' || $pg_name == 'register_result') {
+  $header_style = "scr_black2";
 } else {
   $header_style = "scr_black";
 }
@@ -69,7 +73,29 @@ if(defined('_INDEX_')) { // index에서만 실행
   </nav>
 
   <div class="hd_mb">
-    <a href="/ktla-dev/bbs/login.php" class="hd_mb-btn login"><img src="/ktla-dev/source/img/login-icon.png" alt="">로그인</a>
+    <?php if($is_member){ ?>
+    <button type="button" class="hd_mb-btn login">
+      <img src="/ktla-dev/source/img/login-icon.png" alt=""><?php echo $member['mb_name'];?>님
+    </button>
+
+    <div id="hd_mb_ov" class="<?php echo $is_admin?'adm':''; ?>">
+      <ul>
+        <?php if($is_admin){ ?>
+        <li>
+          <a href="/ktla-dev/adm" target="_blank">관리자</a>
+        </li>
+        <?php } ?>
+        <li>
+          <a href="/ktla-dev/bbs/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a>
+        </li>
+        <li>
+          <a href="/ktla-dev/bbs/logout.php">로그아웃</a>
+        </li>
+      </ul>
+    </div>
+    <?php } else { ?>
+    <a href="/ktla-dev/bbs/login.php" class="hd_mb-btn"><img src="/ktla-dev/source/img/login-icon.png" alt="">로그인</a>
+    <?php } ?>
   </div>
 </div>
 <!-- } 헤더 끝 -->

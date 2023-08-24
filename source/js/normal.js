@@ -1,20 +1,5 @@
 'use strict';
 
-const header = document.querySelector("#header");
-const header_logo = document.querySelector("#hd_logo");
-const header_logo_img = header_logo.querySelector("img");
-
-// Header Color Style
-const headerStyle = (mode) => {
-  if(mode === 'black') {
-    header.classList.add('black');
-    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
-  } else {
-    header.classList.remove('black');
-    header_logo_img.setAttribute('src','/ktla-dev/source/img/logo-white.png');
-  }
-}
-
 // [Plugin - swiper] Main Visual Slider
 const mainVisual = ".main_visual-slider";
 const mainVisualSwiper = new Swiper(mainVisual, {
@@ -45,17 +30,48 @@ const partnersSwiper = new Swiper(partners, {
   }
 });
 
-const scrollHeader = (scrollValue) => {
-  if ( scrollValue > 30 ) {
-    $(".scr_black").addClass("black2");
+const header = document.querySelector("#header");
+const header_logo = document.querySelector("#hd_logo");
+const header_logo_img = header_logo.querySelector("img");
+
+// Header Color Style
+const headerStyle = (mode) => {
+  if(mode === 'black') {
+    header.classList.add('black');
     header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
   } else {
-    $(".scr_black").removeClass("black2");
+    header.classList.remove('black');
     header_logo_img.setAttribute('src','/ktla-dev/source/img/logo-white.png');
   }
 }
 
+const scrollHeader = (scrollValue) => {
+  if($("#header").hasClass("scr_black")){
+    if ( scrollValue > 30 ) {
+      $(".scr_black").addClass("black2");
+      header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
+    } else {
+      $(".scr_black").removeClass("black2");
+      header_logo_img.setAttribute('src','/ktla-dev/source/img/logo-white.png');
+    }
+  }
+
+  if($("#header").hasClass("scr_black2")){
+    if ( scrollValue > 30 ) {
+      $(".scr_black2").addClass("black2");
+      header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
+    } else {
+      $(".scr_black2").removeClass("black2");
+      header_logo_img.setAttribute('src','/ktla-dev/source/img/logo.png');
+    }
+  }
+}
+
 $(document).ready(function(){
+  $(".hd_mb-btn.login").on('click', function(){
+    $("#hd_mb_ov").toggleClass("on");
+  })
+
   // [plugin - FullPage] Main Scroll Effect
   $('#main').fullpage({
     anchors: ['page1', 'page2', 'page3', 'page4'],

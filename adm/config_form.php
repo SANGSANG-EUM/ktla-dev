@@ -940,14 +940,6 @@ if ($config['cf_sms_use'] && $config['cf_icode_id'] && $config['cf_icode_pw']) {
                             <textarea name="cf_prohibit_email" id="cf_prohibit_email" rows="5"><?php echo get_sanitize_input($config['cf_prohibit_email']); ?></textarea>
                         </td>
                     </tr>
-                    <tr>
-                        <th scope="row"><label for="cf_stipulation">회원가입약관</label></th>
-                        <td colspan="3"><textarea name="cf_stipulation" id="cf_stipulation" rows="10"><?php echo html_purifier($config['cf_stipulation']); ?></textarea></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><label for="cf_privacy">개인정보처리방침</label></th>
-                        <td colspan="3"><textarea id="cf_privacy" name="cf_privacy" rows="10"><?php echo html_purifier($config['cf_privacy']); ?></textarea></td>
-                    </tr>
                 </tbody>
             </table>
         </div>
