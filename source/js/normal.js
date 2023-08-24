@@ -23,11 +23,19 @@ const partners = ".partners-slider";
 const partnersSwiper = new Swiper(partners, {
   draggable: true,
   slidesPerView: "auto",
-  spaceBetween: 100,
+  spaceBetween: 10,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false
-  }
+  },
+  breakpoints: {
+    1291: {
+      spaceBetween: 100,
+    },
+    768: {
+      spaceBetween: 50,
+    },
+  },
 });
 
 const header = document.querySelector("#header");
@@ -46,6 +54,10 @@ const headerStyle = (mode) => {
 }
 
 const scrollHeader = (scrollValue) => {
+  if(screen.width < 1024) {
+    $("#header").addClass("scr_black");
+  }
+
   if($("#header").hasClass("scr_black")){
     if ( scrollValue > 30 ) {
       $(".scr_black").addClass("black2");
@@ -78,17 +90,19 @@ $(document).ready(function(){
     autoScrolling:true,
     navigation: false,
     showActiveTooltip: false,
-    //navigationTooltips: ['','','',''],
-    //responsiveWidth: 1291,
+    responsiveWidth: 1024,
     afterLoad: function(anchorLink, index){
-      if (index == 2) {
-        headerStyle('black');
-      } else {
-        headerStyle();
-      }
+      if(screen.width > 1023) {
+        if (index == 2) {
+          headerStyle('black');
+        } else {
+          headerStyle();
+        }
+        
 
-      //메인 퀵메뉴 오버 마우스 효과(초기화)
-      $(".main_quick_list-item").eq(0).addClass('act').siblings().removeClass('act');
+        //메인 퀵메뉴 오버 마우스 효과(초기화)
+        $(".main_quick_list-item").eq(0).addClass('act').siblings().removeClass('act');
+      }
     }
   });
 

@@ -3,7 +3,8 @@
 
 /* Header */
 #header {position: fixed; width: 100%; z-index: 700;}
-#hd_logo {position: absolute; top: 0; left: 70px; z-index: 10; height: 100px; line-height: 100px;}
+#hd_logo {display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 70px; z-index: 10; height: 100px;}
+#hd_logo a {display: block;}
 
 #hd_logo img {width: 250px;}
 #hd_gnb .depth1 {display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-start; gap: 80px;}
@@ -41,7 +42,7 @@
 
 .partners-slider {overflow: hidden; width: calc(100% - 263px); margin-left: 160px;}
 .partners-slider .swiper-wrapper {align-items: center;}
-.partners-slider .partners-ci {display: block; width: auto;}
+.partners-slider .partners-ci {display: flex; width: auto; align-items: center;}
 
 .fnb {border-bottom: 1px solid #e0e0e0; background: #fff;}
 .fnb .inner {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center; gap: 10px 20px;}
@@ -93,6 +94,7 @@
 .main_section02 {background: url('/ktla-dev/source/img/main-news-bg.jpg') no-repeat center/cover;}
 .main_news .inner {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start;}
 .main_news_lt {width: calc(100% - 820px); display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 25px;}
+.main_news-more_wrap {}
 .main_news-more {display: block; position: relative; width: 224px; max-width: 100%; margin-top: 4px; padding: 20px 0 20px 24px; border-bottom: 1px solid #ccc; font-size: 16px; font-weight: 500; color: #333; line-height: 1;}
 .main_news-more:first-child {margin-top: 0;}
 .main_news-more:before {content: ""; display: block; position: absolute; top: 26px; left: 10px; width: 4px; height: 4px; border-radius: 50%; background: #333;}
@@ -119,7 +121,8 @@
 .main_news_list-box:hover .date {color: #fff;}
 
 .main_news_list-item.noti-zone {}
-.main_news_list-item.noti-zone img {position: absolute; top: 0; left: 0; z-index: 5; object-fit: cover;}
+.main_news_list-item.noti-zone .main_news_list-box {background-color: #284d9f; box-shadow: none;}
+.main_news_list-item.noti-zone img {position: absolute; top: 0; left: 0; z-index: 5; object-fit: contain; width: 100%; height: 100%; border: 0; background-color: #284d9f; box-shadow: none;}
 
 .main_section03 {background: url('/ktla-dev/source/img/main-quick-bg.jpg') no-repeat center/cover;}
 .main_quick {display: block; overflow: hidden; width: 100%;}
