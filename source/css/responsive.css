@@ -30,6 +30,12 @@
   /* 주요 사업 */
   #business-major-ct .business-major-list {min-height: auto;}
   #business-major-ct .business-major-list .text {font-size: 20px;}
+
+  /* 임원단 */
+  .executive-tab .inner {display: none;}
+  .executive-sel_wrap {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center;}
+  .executive-sel-tit {display: block; width: 82px; height: 42px; line-height: 42px; font-size: 14px; font-weight: 500; color: #fff; border-radius: 5px 0 0 5px; background: #2ea9a9; text-align: center;}
+  .executive-sel {float: none; width: 200px; max-width: calc(100% - 82px); height: 42px; line-height: 40px; border-left: 0; border-radius: 0 5px 5px 0;}
 }
 
 @media screen and (max-width:1290px){
@@ -98,6 +104,9 @@
 
   /* 주요 사업 */
   #business-major-ct .business-major-list .text {font-size: 18px;}
+
+  /* 임원단 */
+  .executive-ct {margin-top: 40px;}
 }
 
 @media screen and (max-width:1023px){
@@ -168,6 +177,14 @@
   /* 주요 사업 */
   #business-major-ct .business-major-list {padding: 30px;}
   #business-major-ct .business-major-list .text {margin-top: 5px; font-size: 16px;}
+
+  /* 임원단 */
+  #executive-ct-tit {font-size: 18px;}
+  #executive-ct-tit:before {margin-top: 8px;}
+  #executive-ct-tit span {font-size: 14px;}
+  #executive-ct-tb tbody th {width: 150px; padding: 20px 10px; font-size: 14px;}
+  #executive-ct-tb tbody td {padding: 20px 10px;}
+  #executive-ct-tb tbody td .person_wrap .person {font-size: 14px;}
 }
 
 @media screen and (max-width:767px){
@@ -266,7 +283,21 @@
   .aboutus-summary-list .title {font-size: 14px;}
 
   /* 주요 사업 */
-  ##business-major-ct {flex-flow: column wrap;}
+  #business-major-ct {flex-flow: column wrap;}
   #business-major-ct .business-major-list {width: 100%; padding: 20px;}
   #business-major-ct .business-major-list .text {font-size: 14px;}
+
+  /* 임원단 */
+  #executive-ct-tit {padding-left: 5px; font-size: 16px;}
+  #executive-ct-tit:before {margin: 7px 5px 0 0;}
+  #executive-ct-tit span {font-size: 12px; margin-left: 5px;}
+  #executive .mark {font-size: 12px;}
+
+  #executive-ct-tb,
+  #executive-ct-tb tbody,
+  #executive-ct-tb tbody tr,
+  #executive-ct-tb tbody th,
+  #executive-ct-tb tbody td {display: block; width: 100%;}
+  #executive-ct-tb tbody th {padding: 10px; background: #fafafa;}
+  #executive-ct-tb tbody td .person_wrap {gap: 3px 0;}
 }

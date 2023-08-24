@@ -20,19 +20,37 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
       <div class="container">
         <div class="wrapper">
           <div class="inner">
-            <button type="button" class="executive-tab-btn">2023년</button>
-            <button type="button" class="executive-tab-btn">2022년</button>
-            <button type="button" class="executive-tab-btn">2021년</button>
-            <button type="button" class="executive-tab-btn">2019년</button>
-            <button type="button" class="executive-tab-btn">2017년</button>
-            <button type="button" class="executive-tab-btn">2015년</button>
-            <button type="button" class="executive-tab-btn">2013년</button>
-            <button type="button" class="executive-tab-btn">2012년</button>
-            <button type="button" class="executive-tab-btn">2010년</button>
-            <button type="button" class="executive-tab-btn">2009년</button>
-            <button type="button" class="executive-tab-btn">2005년</button>
-            <button type="button" class="executive-tab-btn">2004년</button>
-            <button type="button" class="executive-tab-btn">2003년</button>
+            <button type="button" id="executive-tab-2023" class="executive-tab-btn" data-id="2023">2023년</button>
+            <button type="button" id="executive-tab-2022" class="executive-tab-btn" data-id="2022">2022년</button>
+            <button type="button" id="executive-tab-2021" class="executive-tab-btn" data-id="2021">2021년</button>
+            <button type="button" id="executive-tab-2019" class="executive-tab-btn" data-id="2019">2019년</button>
+            <button type="button" id="executive-tab-2017" class="executive-tab-btn" data-id="2017">2017년</button>
+            <button type="button" id="executive-tab-2015" class="executive-tab-btn" data-id="2015">2015년</button>
+            <button type="button" id="executive-tab-2013" class="executive-tab-btn" data-id="2013">2013년</button>
+            <button type="button" id="executive-tab-2012" class="executive-tab-btn" data-id="2012">2012년</button>
+            <button type="button" id="executive-tab-2010" class="executive-tab-btn" data-id="2010">2010년</button>
+            <button type="button" id="executive-tab-2009" class="executive-tab-btn" data-id="2009">2009년</button>
+            <button type="button" id="executive-tab-2005" class="executive-tab-btn" data-id="2005">2005년</button>
+            <button type="button" id="executive-tab-2004" class="executive-tab-btn" data-id="2004">2004년</button>
+            <button type="button" id="executive-tab-2003" class="executive-tab-btn" data-id="2003">2003년</button>
+          </div>
+          <div class="executive-sel_wrap">
+            <span class="executive-sel-tit">연도 선택</span>
+            <select class="nc-sel executive-sel" onchange="executiveRender(this.value)">
+              <option value="2023">2023년</option>
+              <option value="2022">2022년</option>
+              <option value="2021">2021년</option>
+              <option value="2019">2019년</option>
+              <option value="2017">2017년</option>
+              <option value="2015">2015년</option>
+              <option value="2013">2013년</option>
+              <option value="2012">2012년</option>
+              <option value="2010">2010년</option>
+              <option value="2009">2009년</option>
+              <option value="2005">2005년</option>
+              <option value="2004">2004년</option>
+              <option value="2003">2003년</option>
+            </select>
           </div>
         </div>
       </div>
@@ -57,8 +75,8 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 </div>
 
 <script>
-const executiveData = [
-  //2023
+const executiveData = {
+  '2023' :
   {
     title: `2023 임원단 <span>(<b class="mark">*</b>지회장교)</span>`,
     th: [
@@ -86,7 +104,7 @@ const executiveData = [
       `신왕균 팀장(한일장신대학교)|<b class="mark">*</b>이은경 실장(호남신학대학교)`
     ]
   },
-  //2022
+  '2022' :
   {
     title: `2022 임원단 <span>(<b class="mark">*</b>지회장교)</span>`,
     th: [
@@ -114,7 +132,7 @@ const executiveData = [
       `신왕균 팀장(한일장신대학교)|<b class="mark">*</b>이은경 실장(호남신학대학교)`
     ]
   },
-  //2021
+  '2021' :
   {
     title: `2021 임원단 <span>(<b class="mark">*</b>지회장교)</span>`,
     th: [
@@ -142,7 +160,7 @@ const executiveData = [
       `신왕균 팀장(한일장신대학교)|<b class="mark">*</b>이은경 실장(호남신학대학교)`
     ]
   },
-  //2019
+  '2019' :
   {
     title: `2019 임원단 <span>(<b class="mark">*</b>지회장교)</span>`,
     th: [
@@ -170,7 +188,7 @@ const executiveData = [
       `<b class="mark">*</b>김이화 주임(한일장신대학교)|이은경 실장(호남신학대학교)`
     ]
   },
-  //2017
+  '2017' :
   {
     title: `2017 임원단 <span>(<b class="mark">*</b>지회장교)</span>`,
     th: [
@@ -198,7 +216,7 @@ const executiveData = [
       `<b class="mark">*</b>신왕균 실장(한일장신대학교)|이은경 실장(호남신학대학교)`
     ]
   },
-  //2015
+  '2015' :
   {
     title: `2015 임원단`,
     th: [
@@ -224,7 +242,7 @@ const executiveData = [
       `신왕균 실장(한일장신대학교)|김명자 팀장(호남신학대학교)`
     ]
   },
-  //2013
+  '2013' :
   {
     title: `2013 임원단`,
     th: [
@@ -252,7 +270,7 @@ const executiveData = [
       `김명자 (호남신학대학교)|신왕균 계장(한일장신대학교)`
     ]
   },
-  //2012
+  '2012' :
   {
     title: `2012 임원단`,
     th: [
@@ -270,7 +288,7 @@ const executiveData = [
       `김익진 관장(그리스도대학교)|김명수 과장(루터대학교)|임영선 과장(서울신학대학교)|인계환 과장(서울장신대학교)|김수연 과장(성결대학교)|정 윤 과장(수원가톨릭대학교)|남우철 팀장(합동신학대학원대학교)|김태문 과장(협성대학교)|현우석 관장(한국성서대학교)|김수남 선임담당(한신대학교)|김성곤 부장(총신대학교)|박현숙 계장(부산가톨릭대학교)|김효경 과장(영남신학대학교)|이창섭 과장(고려신학대학원)|곽은경 팀장(나사렛대학교)|임원형 과장(대전가톨릭대학교)|문기은 주임(백석대학교)|박승모 부장(침례신학대학교)|김명자 팀장(호남신학대학교)|김경희 실장(한일장신대학교)`
     ]
   },
-  //2010
+  '2010' :
   {
     title: `2010 임원단`,
     th: [
@@ -288,7 +306,7 @@ const executiveData = [
       `김익진 관장(그리스도대학교)|윤세라 계장(루터대학교)|임영선 과장(서울신학대학교)|인계환 과장(서울장신대학교)|김수연 과장(성결대학교)|정 윤 과장(수원가톨릭대학교)|남우철 팀장(합동신학대학원대학교)|홍남희 부장(감신대학교)|현우석 관장(한국성서대학교)|김수남 선임담당(한신대학교)|김성곤 부장(총신대학교)|박현숙 계장(부산가톨릭대학교)|김효경 과장(영남신학대학교)|이창섭 과장(고려신학대학원)|곽은경 팀장(나사렛대학교)|임원형 과장(대전가톨릭대학교)|박태수 차장(백석대학교)|박승모 부장(침례신학대학교)|김명자 팀장(호남신학대학교)|김경희 실장(한일장신대학교)`
     ]
   },
-  //2009
+  '2009' :
   {
     title: `2009 임원단`,
     th: [
@@ -306,7 +324,7 @@ const executiveData = [
       `황명길 과장(고려신학교)|윤세라 계장(루터대학교)|김선옥 과장(성결대학교)|정윤 과장(수원가톨릭대학교)|박은국 팀장(합동신학대학원대학교)|김태문 과장(협성대학교)|정경애 계장(총신대학교)|현우석 관장(한국성서대학교)|박현숙 계장(부산가톨릭대학교)|김효경 과장(영남신학대학교)|이창섭 팀장(고려신학대학원)|임원형 과장(대전가톨릭대학교)|고승덕 주임(침례신학대학교)|박태수 차장(백석대학교)|신왕균 계장(한일장신대학교)|김용미 팀장(호남신학대학교)`
     ]
   },
-  //2005
+  '2005' :
   {
     title: `2005 임원교`,
     th: [
@@ -334,7 +352,7 @@ const executiveData = [
       `합동신학대학원대학교`
     ]
   },
-  //2004
+  '2004' :
   {
     title: `2004 임원교`,
     th: [
@@ -362,7 +380,7 @@ const executiveData = [
       `최종명(카톨릭대학교)|강덕선(총신대학교)|이순성(서울신학대학교)|황명길(고려신학교)|이창섭(고려신학대학원)|최충식(천안대학교)`
     ]
   },
-  //2003
+  '2003' :
   {
     title: `2003 임원교`,
     th: [
@@ -384,20 +402,20 @@ const executiveData = [
       `최종명(가톨릭대학교)|강덕선(총신대학교)|이순성(서울신학대학교)|황명길(고려신학교)|이창섭(고려신학대학원)|최충식(천안대학교)|신만섭(합동신학대학원대학교)`
     ]
   }
-]
+}
 
 const executiveTitle = document.querySelector("#executive-ct-tit");
 const executiveTbody = document.querySelector("#executive-ct-tb tbody");
 const executiveTabBtn = document.querySelectorAll(".executive-tab-btn");
-let executiveTabActIndex = 0;
+let executiveTabAct = '2023';
 
 const executiveInit = () => {
   executiveTitle.innerHTML = "";
   executiveTbody.innerHTML = "";
 }
 
-const executiveRender = (index) => {
-  let executiveActData = executiveData[index];
+const executiveRender = (idx) => {
+  let executiveActData = executiveData[idx];
 
   executiveInit();
 
@@ -414,21 +432,22 @@ const executiveRender = (index) => {
   });
 }
 
-function executiveActiveButton(index) {
-  executiveTabBtn[executiveTabActIndex].classList.remove('act');
-  executiveTabBtn[index].classList.add('act');
-  executiveTabActIndex = index;
+function executiveActiveButton(actId) {
+  document.querySelector(`#executive-tab-${executiveTabAct}`).classList.remove('act');
+  document.querySelector(`#executive-tab-${actId}`).classList.add('act');
+  executiveTabAct = actId;
 }
 
 window.addEventListener("load", () => {
-  executiveRender(0);
-  executiveActiveButton(0);
+  executiveRender(executiveTabAct);
+  executiveActiveButton(executiveTabAct);
 
   executiveTabBtn.forEach((el, index) => {
     el.onclick = () => {
-      executiveActData = executiveData[index];
-      executiveRender(index);
-      executiveActiveButton(index);
+      let idx = el.getAttribute('data-id');
+      
+      executiveRender(idx);
+      executiveActiveButton(idx);
     }
   })
 });

@@ -232,6 +232,7 @@
 .executive-tab-btn:first-child:after {display: none;}
 .executive-tab-btn.act {font-weight: 600; color: #2ea9a9;}
 .executive-tab-btn:not(.act):hover {color: #333;}
+.executive-sel_wrap {display: none;}
 
 .executive-ct {margin-top: 60px;}
 #executive-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
