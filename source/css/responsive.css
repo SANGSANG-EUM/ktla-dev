@@ -20,11 +20,16 @@
   .sb_top_ct {height: 500px;}
   .sb_top .sb_title {margin: 12px 0 70px;}
 
+  .sub_title_box {padding-bottom: 50px;}
   .sub_title {font-size: 40px;}
 
   /* 협회 안내 */
   .aboutus-banner {padding-left: 40px;}
   .aboutus-banner-img {width: 100%; height: 450px;}
+
+  /* 주요 사업 */
+  #business-major-ct .business-major-list {min-height: auto;}
+  #business-major-ct .business-major-list .text {font-size: 20px;}
 }
 
 @media screen and (max-width:1290px){
@@ -78,6 +83,7 @@
   .sb_top .sb_title-eng {font-size: 18px;}
   .sb_top .sb_title {margin: 12px 0 70px; font-size: 50px;}
 
+  .sub_title_box {padding-bottom: 30px;}
   .sub_title {font-size: 34px;}
 
   /* 협회 안내 */
@@ -89,6 +95,9 @@
   .aboutus-summary-list .icon {width: 40px;}
   .aboutus-summary-list .text {width: calc(100% - 40px);}
   .aboutus-summary-list .expl {margin-top: 5px;}
+
+  /* 주요 사업 */
+  #business-major-ct .business-major-list .text {font-size: 18px;}
 }
 
 @media screen and (max-width:1023px){
@@ -155,6 +164,10 @@
   .aboutus-summary-list .text {width: calc(100% - 30px);}
   .aboutus-summary-list .title {font-size: 18px;}
   .aboutus-summary-list .expl {font-size: 14px;}
+
+  /* 주요 사업 */
+  #business-major-ct .business-major-list {padding: 30px;}
+  #business-major-ct .business-major-list .text {margin-top: 5px; font-size: 16px;}
 }
 
 @media screen and (max-width:767px){
@@ -230,12 +243,13 @@
   .sb_top .sb_title {margin: 12px 0 20px; font-size: 30px;}
 
   .sb_top .sb_menus-home img {width: 20px;}
-  .sb_menus-sel {font-size: 14px;}
+  .sb_menus-sel {width: 96px; font-size: 14px;}
   .sb_menus-arrow.arrow1 {margin: 0 10px;}
   .sb_menus-arrow.arrow2 {margin: 0 15px;}
 
   .sub_contents {padding: 50px 0 70px;}
 
+  .sub_title_box {padding-bottom: 20px;}
   .sub_title {font-size: 20px;}
   .sub_title br {display: none;}
 
@@ -243,10 +257,16 @@
   .aboutus-banner {padding-left: 20px; margin-bottom: 30px;}
   .aboutus-banner-img {height: 150px;}
 
+  #aboutus .sub_title_box {padding-bottom: 20px;}
   .aboutus-text {font-size: 14px;}
 
   .aboutus-summary {margin-top: 30px;}
   .aboutus-summary .inner {flex-flow: column wrap;}
   .aboutus-summary-list {width: 100%;}
-  .aboutus-summary-list .title {font-size: 16px;}
+  .aboutus-summary-list .title {font-size: 14px;}
+
+  /* 주요 사업 */
+  ##business-major-ct {flex-flow: column wrap;}
+  #business-major-ct .business-major-list {width: 100%; padding: 20px;}
+  #business-major-ct .business-major-list .text {font-size: 14px;}
 }
