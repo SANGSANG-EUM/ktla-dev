@@ -42,7 +42,7 @@ $sb_menus = [
   [
     'id' => 'organization',
     'name' => '회원교 안내',
-    'link' => '',
+    'link' => '/ktla-dev/sub/member_list',
     'sb_2menus' => [
       [
         'id' => 'member',
@@ -74,7 +74,7 @@ $sb_menus = [
   [
     'id' => 'community',
     'name' => '커뮤니티',
-    'link' => '',
+    'link' => '/ktla-dev/library',
     'sb_2menus' => [
       [
         'id' => 'library',
@@ -105,7 +105,7 @@ $sb_menus = [
   [
     'id' => 'seminar',
     'name' => '세미나 안내',
-    'link' => '',
+    'link' => '/ktla-dev/sub/participation',
     'sb_2menus' => [
       [
         'id' => 'regi_guide',
