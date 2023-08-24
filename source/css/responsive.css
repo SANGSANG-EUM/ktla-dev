@@ -15,6 +15,16 @@
   .main_news_rt {width: 740px; margin-right: 0;}
   .main_news_list-box {height: 270px; padding: 30px 40px;}
   .main_news_list-box .subj {font-size: 20px;}
+
+  /* Sub */
+  .sb_top_ct {height: 500px;}
+  .sb_top .sb_title {margin: 12px 0 70px;}
+
+  .sub_title {font-size: 40px;}
+
+  /* 협회 안내 */
+  .aboutus-banner {padding-left: 40px;}
+  .aboutus-banner-img {width: 100%; height: 450px;}
 }
 
 @media screen and (max-width:1290px){
@@ -62,6 +72,23 @@
   .main_quick_list-item:after {left: 40px;}
   .main_quick_list-item:first-child:after {left: 40px; width: calc(100% - -20px);}
   .main_quick_list-item .quick-btns {margin-top: 20px;}
+
+  /* Sub */
+  .sb_top_ct {height: 450px;}
+  .sb_top .sb_title-eng {font-size: 18px;}
+  .sb_top .sb_title {margin: 12px 0 70px; font-size: 50px;}
+
+  .sub_title {font-size: 34px;}
+
+  /* 협회 안내 */
+  .aboutus-banner {padding-left: 30px;}
+  .aboutus-banner-img {height: 400px;}
+
+  .aboutus-summary .inner {gap: 10px;}
+  .aboutus-summary-list {width: calc(33.333% - 7px); padding: 30px 20px;}
+  .aboutus-summary-list .icon {width: 40px;}
+  .aboutus-summary-list .text {width: calc(100% - 40px);}
+  .aboutus-summary-list .expl {margin-top: 5px;}
 }
 
 @media screen and (max-width:1023px){
@@ -69,6 +96,7 @@
   html, body {overflow-x: hidden !important; height: auto !important;}
 
   /* Header */
+  #header {height: 100px;}
   #hd_gnb {display: none !important;}
   .hd_mb {display: none;}
 
@@ -108,7 +136,25 @@
   .main_quick_list-item .expl {min-height: 42px; margin-top: 10px; font-size: 14px;}
   .main_quick_list-item .quick-btn {height: 45px; line-height: 45px; font-weight: 400; padding: 0 15px; font-size: 14px;}
   .main_quick_list-item .quick-btn:after {right: 15px;}
-  /* rgba(255,255,255,0.2); */
+
+  /* Sub */
+  .sb_top_ct {height: 350px;}
+  .sb_top .sb_title-eng {font-size: 16px;}
+  .sb_top .sb_title {margin: 12px 0 30px; font-size: 40px;}
+
+  .sb_menus-sel {min-width: auto; width: auto; padding: 12px 20px 12px 0; font-size: 16px;}
+
+  .sub_title {font-size: 26px;}
+
+  /* 협회 안내 */
+  .aboutus-banner-img {height: 200px;}
+  
+  .aboutus-summary {margin-top: 50px;}
+  .aboutus-summary-list {padding: 20px;}
+  .aboutus-summary-list .icon {width: 30px;}
+  .aboutus-summary-list .text {width: calc(100% - 30px);}
+  .aboutus-summary-list .title {font-size: 18px;}
+  .aboutus-summary-list .expl {font-size: 14px;}
 }
 
 @media screen and (max-width:767px){
@@ -177,4 +223,30 @@
   .main_quick_list-item .expl br {display: none;}
   .main_quick_list-item .quick-btns {margin-top: 10px;}
   .main_quick_list-item .quick-btn {width: 100%; font-size: 12px;}
+
+  /* Sub */
+  .sb_top_ct {height: 300px; padding-top: 60px;}
+  .sb_top .sb_title-eng {font-size: 14px;}
+  .sb_top .sb_title {margin: 12px 0 20px; font-size: 30px;}
+
+  .sb_top .sb_menus-home img {width: 20px;}
+  .sb_menus-sel {font-size: 14px;}
+  .sb_menus-arrow.arrow1 {margin: 0 10px;}
+  .sb_menus-arrow.arrow2 {margin: 0 15px;}
+
+  .sub_contents {padding: 50px 0 70px;}
+
+  .sub_title {font-size: 20px;}
+  .sub_title br {display: none;}
+
+  /* 협회 안내 */
+  .aboutus-banner {padding-left: 20px; margin-bottom: 30px;}
+  .aboutus-banner-img {height: 150px;}
+
+  .aboutus-text {font-size: 14px;}
+
+  .aboutus-summary {margin-top: 30px;}
+  .aboutus-summary .inner {flex-flow: column wrap;}
+  .aboutus-summary-list {width: 100%;}
+  .aboutus-summary-list .title {font-size: 16px;}
 }
