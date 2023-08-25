@@ -294,7 +294,7 @@
 .rules-paragraph .depth2 {margin-top: 8px;}
 .rules-paragraph .depth3 {padding: 16px 0 8px 10px;}
 
-.rules-tit {margin-bottom: 30px; padding: 0 10px 18px; border-bottom: 2px solid #666; font-size: 30px; font-weight: 700; color: #0f0f0f; line-height: auto;}
+.rules-tit {margin-bottom: 30px; padding: 0 10px 18px; border-bottom: 2px solid #666; font-size: 30px; font-weight: 700; color: #0f0f0f; line-height: normal;}
 .rules-txt1 {font-size: 16px; font-weight: 400; color: #333; line-height: auto;}
 .rules-txt2 {font-size: 16px; font-weight: 300; color: #666; line-height: 1.75;}
 .rules-txt2.indent {padding-left: 17px; text-indent: -17px;}
