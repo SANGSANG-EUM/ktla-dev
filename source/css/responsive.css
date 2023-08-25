@@ -33,9 +33,7 @@
 
   /* 임원단 */
   .executive-tab .inner {display: none;}
-  .executive-sel_wrap {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: center;}
-  .executive-sel-tit {display: block; width: 82px; height: 42px; line-height: 42px; font-size: 14px; font-weight: 500; color: #fff; border-radius: 5px 0 0 5px; background: #2ea9a9; text-align: center;}
-  .executive-sel {float: none; width: 200px; max-width: calc(100% - 82px); height: 42px; line-height: 40px; border-left: 0; border-radius: 0 5px 5px 0;}
+  .executive-sel_wrap {display: flex;}
 }
 
 @media screen and (max-width:1290px){
@@ -115,6 +113,9 @@
 
   /* 회칙 */
   .rules-tit {font-size: 24px;}
+
+  /* 회원교 명단 */
+  .member_list_inner {padding: 20px;}
 }
 
 @media screen and (max-width:1023px){
@@ -218,6 +219,17 @@
   .rules-ct_wrap {padding: 30px;}
   .rules-box {margin-top: 50px;}
   .rules-tit {margin-bottom: 10px; padding: 0 10px 10px; font-size: 20px;}
+
+  /* 회원교 명단 */
+  .consonant_category_ul {display: none;}
+  .consonant_category-sel_wrap {display: flex;}
+
+  .member_list_box {padding-top: 30px;}
+  .member_list_inner .title {padding-bottom: 20px; font-size: 16px;}
+  .member_list_inner .title::before {bottom: 8px;}
+  .member_list_info_item {padding-left: 16px; text-indent: -16px; font-size: 14px;}
+  .member_list_info_item.address::before {font-size: 14px;}
+  .member_list_info_item.tel::before {font-size: 14px;}
 }
 
 @media screen and (max-width:767px){
@@ -309,6 +321,9 @@
   .sub-tab-btn {font-size: 16px;}
   .sub-tab-btn:after {left: -10px;}
 
+  .sub-tab-sel-tit {width: 70px; font-size: 12px;}
+  .sub-tab-sel {max-width: calc(100% - 70px); font-size: 12px;}
+
   /* 협회 안내 */
   .aboutus-banner {padding-left: 20px; margin-bottom: 30px;}
   .aboutus-banner-img {height: 150px;}
@@ -370,4 +385,14 @@
   .rules-tit {margin-bottom: 10px; padding: 0 10px 10px; font-size: 18px;}
   .rules-txt1 {font-size: 14px;}
   .rules-txt2 {font-size: 14px;}
+
+  /* 회원교 명단 */
+  #member_list_ct {display: block;}
+  #member_list_ct li {width: 100%; height: auto !important; margin-top: 10px;}
+  #member_list_ct li:first-child {margin-top: 0;}
+  .member_list_inner {height: auto;}
+  .member_list_inner .title {font-size: 14px;}
+  .member_list_info_item {padding-left: 14px; text-indent: -14px; font-size: 14px;}
+  .member_list_info_item.address::before {font-size: 12px;}
+  .member_list_info_item.tel::before {font-size: 12px;}
 }

@@ -21,30 +21,53 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
     <!-- } Sub Title -->
 
     <div class="member_list_wrap">
-      <div class="wrapper">
-        <div class="consonant_category_wrap">
-          <ul class="i-col-0 consonant_category_ul">
-            <li><button data-sort="all" class="active">전체</button></li>
-            <li><button data-sort="ㄱ">ㄱ</button></li>
-            <li><button data-sort="ㄴ">ㄴ</button></li>
-            <li><button data-sort="ㄷ">ㄷ</button></li>
-            <li><button data-sort="ㄹ">ㄹ</button></li>
-            <li><button data-sort="ㅁ">ㅁ</button></li>
-            <li><button data-sort="ㅂ">ㅂ</button></li>
-            <li><button data-sort="ㅅ">ㅅ</button></li>
-            <li><button data-sort="ㅇ">ㅇ</button></li>
-            <li><button data-sort="ㅈ">ㅈ</button></li>
-            <li><button data-sort="ㅊ">ㅊ</button></li>
-            <li><button data-sort="ㅋ">ㅋ</button></li>
-            <li><button data-sort="ㅌ">ㅌ</button></li>
-            <li><button data-sort="ㅍ">ㅍ</button></li>
-            <li><button data-sort="ㅎ">ㅎ</button></li>
-          </ul>
-        </div>
-        <div class="member_list_box">
-          <ul id="member_list_ct" class="i-col-2">
+      <div class="container">
+        <div class="wrapper">
+          <div class="consonant_category_wrap">
+            <ul class="i-col-0 consonant_category_ul">
+              <li><button data-sort="all" class="active">전체</button></li>
+              <li><button data-sort="ㄱ">ㄱ</button></li>
+              <li><button data-sort="ㄴ">ㄴ</button></li>
+              <li><button data-sort="ㄷ">ㄷ</button></li>
+              <li><button data-sort="ㄹ">ㄹ</button></li>
+              <li><button data-sort="ㅁ">ㅁ</button></li>
+              <li><button data-sort="ㅂ">ㅂ</button></li>
+              <li><button data-sort="ㅅ">ㅅ</button></li>
+              <li><button data-sort="ㅇ">ㅇ</button></li>
+              <li><button data-sort="ㅈ">ㅈ</button></li>
+              <li><button data-sort="ㅊ">ㅊ</button></li>
+              <li><button data-sort="ㅋ">ㅋ</button></li>
+              <li><button data-sort="ㅌ">ㅌ</button></li>
+              <li><button data-sort="ㅍ">ㅍ</button></li>
+              <li><button data-sort="ㅎ">ㅎ</button></li>
+            </ul>
 
-          </ul>
+            <div class="sub-tab-sel_wrap consonant_category-sel_wrap">
+              <span class="sub-tab-sel-tit">모아보기</span>
+              <select class="nc-sel sub-tab-sel" onchange="koIndex.showData(this.value);">
+                <option value="all" selected>전체</option>
+                <option value="ㄱ">ㄱ</option>
+                <option value="ㄴ">ㄴ</option>
+                <option value="ㄷ">ㄷ</option>
+                <option value="ㄹ">ㄹ</option>
+                <option value="ㅁ">ㅁ</option>
+                <option value="ㅂ">ㅂ</option>
+                <option value="ㅅ">ㅅ</option>
+                <option value="ㅇ">ㅇ</option>
+                <option value="ㅈ">ㅈ</option>
+                <option value="ㅊ">ㅊ</option>
+                <option value="ㅋ">ㅋ</option>
+                <option value="ㅌ">ㅌ</option>
+                <option value="ㅍ">ㅍ</option>
+                <option value="ㅎ">ㅎ</option>
+              </select>
+            </div>
+          </div>
+          <div class="member_list_box">
+            <ul id="member_list_ct" class="match-height">
+
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -315,19 +338,20 @@ class KoreanIndex {
   }
 
   memberInit() {
-    this.memberList.innerHTML = ''; // 기존 데이터 초기화
+    this.memberList.innerHTML = '';
     this.member.sort(this.compareNames);
     this.renderList(this.member);
   }
 
   showData(index) {
-    this.memberList.innerHTML = ''; // 기존 데이터 초기화
+    this.memberList.innerHTML = '';
     if (index === 'all') {
       this.memberInit();
     } else {
       const filteredData = this.member.filter(item => this.getInitial(item.name) === index);
       this.renderList(filteredData);
     }
+    $("#member_list_ct li").matchHeight();
   }
 
   renderList(data) {
@@ -376,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
       categoryButtons.forEach(btn => btn.classList.remove('active'));
       e.target.classList.add('active');
 
-      const sortName = e.target.textContent;
+      const sortName = e.target.getAttribute('data-sort');
       koIndex.showData(sortName);
     });
   });

@@ -193,6 +193,10 @@
 .sub-tab-btn:not(.act):hover {color: #333;}
 .sub-tab-ct {}
 
+.sub-tab-sel_wrap {display: none; flex-flow: row wrap; justify-content: flex-start; align-items: center;}
+.sub-tab-sel-tit {display: block; width: 82px; height: 42px; line-height: 42px; font-size: 14px; font-weight: 500; color: #fff; border-radius: 5px 0 0 5px; background: #2ea9a9; text-align: center;}
+.sub-tab-sel {float: none; width: 200px; max-width: calc(100% - 82px); height: 42px; line-height: 40px; border-left: 0; border-radius: 0 5px 5px 0;}
+
 .style-tb {width: 100%; border-top: 2px solid #666; border-bottom: 2px solid #666;}
 .style-tb thead th {font-size: 16px; font-weight: 500; color: #333; padding: 19px 0; background-color: #fafafa;}
 .style-tb tbody tr {border-top: 1px solid #eee;}
@@ -232,7 +236,6 @@
 .executive-tab-btn:first-child:after {display: none;}
 .executive-tab-btn.act {font-weight: 600; color: #2ea9a9;}
 .executive-tab-btn:not(.act):hover {color: #333;}
-.executive-sel_wrap {display: none;}
 
 .executive-ct {margin-top: 60px;}
 #executive-ct-tit {padding-left: 12px; font-size: 20px; font-weight: 700; color: #0f0f0f;}
@@ -314,13 +317,13 @@
 .consonant_category_ul li button.active {font-weight: 600; color: #2EA9A9;}
 
 .member_list_box {padding-top: 60px;}
-#member_list_ct {margin: -10px;}
-#member_list_ct li {padding: 10px;}
-.member_list_inner {border-radius: 10px; border: 1px solid #E6E6E6; padding: 29px 50px 30px;}
+#member_list_ct {display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; gap: 20px;}
+#member_list_ct li {width: calc(50% - 10px);}
+.member_list_inner {height: 100%; border-radius: 10px; border: 1px solid #E6E6E6; padding: 29px 50px 30px;}
 .member_list_inner .title {font-weight: 500; font-size: 18px; color: #333; padding-bottom: 40px; position: relative;}
 .member_list_inner .title::before {content: ''; width: 18px; height: 2px; background-color: #666; position: absolute; bottom: 20px; left: 0;}
 .member_list_info {}
-.member_list_info_item {font-weight: 300; font-size: 16px; color: #666; line-height: 1.875;}
+.member_list_info_item {padding-left: 18px; text-indent: -18px; font-weight: 300; font-size: 16px; color: #666; line-height: 1.875;}
 .member_list_info_item.address::before {content: 'A.  '; font-weight: 400; font-size: 16px; color: #333;}
 .member_list_info_item.tel::before {content: 'T.  '; font-weight: 400; font-size: 16px; color: #333;}
 

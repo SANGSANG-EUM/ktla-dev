@@ -34,9 +34,9 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
             <button type="button" id="executive-tab-2004" class="executive-tab-btn" data-id="2004">2004년</button>
             <button type="button" id="executive-tab-2003" class="executive-tab-btn" data-id="2003">2003년</button>
           </div>
-          <div class="executive-sel_wrap">
-            <span class="executive-sel-tit">연도 선택</span>
-            <select class="nc-sel executive-sel" onchange="executiveRender(this.value)">
+          <div class="sub-tab-sel_wrap executive-sel_wrap">
+            <span class="sub-tab-sel-tit">연도 선택</span>
+            <select class="nc-sel sub-tab-sel" onchange="executiveRender(this.value)">
               <option value="2023">2023년</option>
               <option value="2022">2022년</option>
               <option value="2021">2021년</option>
