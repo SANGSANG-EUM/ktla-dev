@@ -348,6 +348,7 @@
   #seminar-ct-tit {padding-left: 5px; font-size: 16px;}
   #seminar-ct-tit:before {margin: 7px 5px 0 0;}
 
+  .seminar-box .year {height: 50px; line-height: 50px; padding-left: 20px; font-size: 16px;}
   .seminar-box .seminar-group {padding: 0 20px;}
   .seminar-group .substance {display: block;}
   .seminar-group .substance .title {width: 100%; margin-top: 0; padding: 10px 0; border-bottom: 1px dashed #aaa; font-size: 14px;}
