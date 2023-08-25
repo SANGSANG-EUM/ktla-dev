@@ -421,6 +421,13 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 } /*@media End*/
 
 @media screen and (max-width:1023px){
+  .bo_sch_wrap {padding: 30px;}
+  .bo_sch .sch_btn img {width: 16px; margin-top: -2px;}
+  .bo_sch .sch_btn span {font-size: 16px;}
+
+  .bo_top_info {margin-bottom: 30px;}
+  .consonant_category_wrap {margin-bottom: 30px;}
+
   #bo_list .tbl_head01 thead,
   #bo_list .tbl_head01 thead tr,
   #bo_list .tbl_head01 thead th,
@@ -451,9 +458,19 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
   .mo_contents .bo_info > li:first-child{margin-left: 0;}
   .mo_contents .bo_info > li:first-child:after{display: none;}
   .mo_contents .bo_info > li i{margin: -2px 5px 0 0; vertical-align: middle; color: #999;}
+
+  .pg_wrap {padding-top: 50px;}
 } /*@media End*/
 
 @media screen and (max-width:767px){
+  .bo_sch_wrap {padding: 10px;}
+  .bo_sch .sch_input {width: calc(100% - 45px); height: 45px; padding: 0 5px; font-size: 14px;}
+  .bo_sch .sch_input::placeholder {font-size: 14px;}
+  .bo_sch .sch_btn {width: 45px; height: 45px; font-size: 0;}
+  .bo_sch .sch_btn img {margin: 0;}
+  .bo_sch .sch_btn span {font-size: 0; margin: 0 auto;}
+  .bo_sch .sch_btn span:first-child {margin: 0 auto;}
+
   #bo_v_title .bo_v_cate{font-size: 12px; padding: 3px 7px; height: auto; line-height: 1.5;}
   #bo_v_title .bo_v_tit{font-size: 18px;}
   #bo_v_oth .bo_v_nb li .bo_v_nb_btn{width: 50px; font-size: 0;}
@@ -468,4 +485,6 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
   #bo_vc header .bo_vc_winfo .bo_vc_time{font-size: 12px;}
   #bo_vc .cmt_contents{font-size: 14px;}
   .bo_vc_act li a{font-size: 12px; height: 25px; line-height: 25px; padding: 0 10px;}
+
+  .pg_wrap {padding-top: 30px;}
 } /*@media End*/

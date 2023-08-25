@@ -1,6 +1,15 @@
+import { formatDate } from '/ktla-dev/source/js/functions.js';
+
 const BoardDataIndex = async(vowel, event) => {
+  if(vowel == 'all') {
+    location.href = '/ktla-dev/book';
+  }
+
   $(".consonant_category_ul li a, .consonant_category_ul li button").removeClass("active");
-  event.target.classList.add("active");
+
+  if(event !== null) {
+    event.target.classList.add("active");
+  }
 
   let encodedVowel = encodeURIComponent(vowel);
   let url = `/ktla-dev/api/ajax.korean_index.php?bo=book&vowel=${encodedVowel}`;
@@ -27,7 +36,7 @@ const BoardDataIndex = async(vowel, event) => {
         </div>
       </td>
       <td class="td_name"><span class="sv_member">${post.wr_name}</span></td>
-      <td class="td_datetime">${post.wr_datetime}</td>
+      <td class="td_datetime">${formatDate(post.wr_datetime,'-')}</td>
     </tr>
     `;
   });
