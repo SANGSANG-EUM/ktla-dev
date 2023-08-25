@@ -276,7 +276,7 @@
 .seminar-box .seminar-group {display: none; padding: 0 60px; background: #fafafa;}
 .seminar-group .substance {display: flex; position: relative; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; padding: 40px 0; border-top: 1px solid #d9d9d9;}
 .seminar-group .substance:first-child {border-top: 0;}
-.seminar-group .substance .title {width: 230px;}
+.seminar-group .substance .title {width: 230px; font-size: 18px; font-weight: 500; color: #333;}
 .seminar-group .substance .expl {width: calc(100% - 230px); font-size: 16px; font-weight: 300; color: #666; line-height: 1.625;}
 .seminar-group .substance .expl b {font-weight: 400; color: #333; line-height: 2;}
 

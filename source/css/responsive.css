@@ -91,6 +91,8 @@
 
   .sub_title_box {padding-bottom: 30px;}
   .sub_title {font-size: 34px;}
+  .sub_sb-expl {margin-top: 20px; font-size: 16px;}
+  .sub_s-expl {font-size: 16px;}
 
   /* 협회 안내 */
   .aboutus-banner {padding-left: 30px;}
@@ -107,6 +109,9 @@
 
   /* 임원단 */
   .executive-ct {margin-top: 40px;}
+
+  /* 연혁 */
+  .hissemi-ct {margin-top: 40px;}
 }
 
 @media screen and (max-width:1023px){
@@ -160,7 +165,7 @@
   .sb_top .sb_title-eng {font-size: 16px;}
   .sb_top .sb_title {margin: 12px 0 30px; font-size: 40px;}
 
-  .sb_menus-sel {min-width: auto; width: auto; padding: 12px 20px 12px 0; font-size: 16px;}
+  .sb_menus-sel {min-width: 96px; width: auto; padding: 12px 20px 12px 0; font-size: 16px;}
 
   .sub_title {font-size: 26px;}
 
@@ -185,6 +190,25 @@
   #executive-ct-tb tbody th {width: 150px; padding: 20px 10px; font-size: 14px;}
   #executive-ct-tb tbody td {padding: 20px 10px;}
   #executive-ct-tb tbody td .person_wrap .person {font-size: 14px;}
+
+  /* 연혁 */
+  #history-ct-tit {font-size: 18px;}
+  #history-ct-tit:before {margin-top: 8px;}
+
+  .history-box:before {left: 120px;}
+  .history-box:after {left: 116px;}
+  .history-box .year {width: 120px; font-size: 16px;}
+  .history-box .substance {width: calc(100% - 120px); padding: 0 30px 0 30px;}
+  .history-box .substance .text {font-size: 14px;}
+  .history-box .substance .text:before {top: 5px;}
+
+  #seminar-ct-tit {font-size: 18px;}
+  #seminar-ct-tit:before {margin-top: 8px;}
+  .seminar-box .year {height: 60px; line-height: 60px; font-size: 18px;}
+  .seminar-box .seminar-group {padding: 0 30px;}
+  .seminar-group .substance {padding: 20px 0;}
+  .seminar-group .substance .title {width: 150px; margin-top: 6px; font-size: 16px;}
+  .seminar-group .substance .expl {width: calc(100% - 150px); font-size: 14px;}
 }
 
 @media screen and (max-width:767px){
@@ -260,7 +284,7 @@
   .sb_top .sb_title {margin: 12px 0 20px; font-size: 30px;}
 
   .sb_top .sb_menus-home img {width: 20px;}
-  .sb_menus-sel {width: 96px; font-size: 14px;}
+  .sb_menus-sel {font-size: 14px;}
   .sb_menus-arrow.arrow1 {margin: 0 10px;}
   .sb_menus-arrow.arrow2 {margin: 0 15px;}
 
@@ -269,6 +293,12 @@
   .sub_title_box {padding-bottom: 20px;}
   .sub_title {font-size: 20px;}
   .sub_title br {display: none;}
+  .sub_sb-expl {font-size: 14px;}
+  .sub_s-expl {font-size: 14px;}
+
+  .sub-tab .inner {gap: 10px 20px;}
+  .sub-tab-btn {font-size: 16px;}
+  .sub-tab-btn:after {left: -10px;}
 
   /* 협회 안내 */
   .aboutus-banner {padding-left: 20px; margin-bottom: 30px;}
@@ -300,4 +330,26 @@
   #executive-ct-tb tbody td {display: block; width: 100%;}
   #executive-ct-tb tbody th {padding: 10px; background: #fafafa;}
   #executive-ct-tb tbody td .person_wrap {gap: 3px 0;}
+
+  /* 연혁 */
+  #history .sub_title_box {padding-bottom: 50px;}
+
+  #history-ct-tit {padding-left: 5px; font-size: 16px;}
+  #history-ct-tit:before {margin: 7px 5px 0 0;}
+
+  .hissemi-ct {margin-top: 20px;}
+  .history-ct_wrap {padding: 0;}
+  .history-box {display: block; margin: 0; border-bottom: 1px solid #eee;}
+  .history-box:before,
+  .history-box:after {display: none;}
+  .history-box .year {width: 100%; margin-top: 0; padding: 10px; font-size: 14px; text-align: left; background: #fafafa;}
+  .history-box .substance {width: 100%; padding: 20px 10px;}
+
+  #seminar-ct-tit {padding-left: 5px; font-size: 16px;}
+  #seminar-ct-tit:before {margin: 7px 5px 0 0;}
+
+  .seminar-box .seminar-group {padding: 0 20px;}
+  .seminar-group .substance {display: block;}
+  .seminar-group .substance .title {width: 100%; margin-top: 0; padding: 10px 0; border-bottom: 1px dashed #aaa; font-size: 14px;}
+  .seminar-group .substance .expl {width: 100%; padding: 10px 0;}
 }
