@@ -230,6 +230,16 @@
   .member_list_info_item {padding-left: 16px; text-indent: -16px; font-size: 14px;}
   .member_list_info_item.address::before {font-size: 14px;}
   .member_list_info_item.tel::before {font-size: 14px;}
+
+  /* 출판물 */
+  .publication-ct {margin-top: 40px;}
+
+  #publication-ct-tit {font-size: 18px;}
+  #publication-ct-tit:before {margin-top: 8px;}
+
+  .style-tb thead th {padding: 10px 3px; font-size: 14px;}
+  .style-tb tbody td {padding: 10px 3px; font-size: 14px;}
+  .style-tb tbody td.ta_l {padding-left: 0;}
 }
 
 @media screen and (max-width:767px){
@@ -395,4 +405,14 @@
   .member_list_info_item {padding-left: 14px; text-indent: -14px; font-size: 14px;}
   .member_list_info_item.address::before {font-size: 12px;}
   .member_list_info_item.tel::before {font-size: 12px;}
+
+  /* 출판물 */
+  .publication-ct {margin-top: 40px;}
+
+  #publication-ct-tit {padding-left: 5px; font-size: 16px;}
+  #publication-ct-tit:before {margin: 7px 5px 0 0;}
+  #publication-ct-tit:after {content: "← 좌우로 스크롤해서 확인해주세요 →"; display: block; width: 100%; padding: 5px 0 2px; font-size: 12px; font-weight: 300; font-style: italic; color: #999; text-align: center;}
+
+  .publication-ct_wrap {overflow-x: auto; margin-top: 0;}
+  .publication-ct_wrap .style-tb {width: 640px;}
 }
