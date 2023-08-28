@@ -149,6 +149,7 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 .profile_info_ct_ul > li{position: relative; padding: 0 10px;}
 .profile_info_ct_ul > li:after{content: ""; display: block; position: absolute; top: 50%; right: -0.5px; width: 1px; height: 10px; margin-top: -5px; background: #666;}
 .profile_info_ct_ul > li:last-child:after{display: none;}
+.profile_info_ct_ul > li .if_date_tit {font-size: 16px; font-weight: 400; color: #333;}
 .profile_info_ct_ul > li i{margin-right: 3px;}
 .profile_info_ct_ul > li strong{font-size: 14px; font-weight: 400; color: #666;}
 

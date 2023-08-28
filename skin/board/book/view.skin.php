@@ -31,30 +31,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
               <div class="profile_info_ct">
                 <ul class="i-col-0 profile_info_ct_ul">
                   <li>
-                    <span class="sound_only">작성자</span>
-                    <strong>
-                      <i class="fa fa-user-o" aria-hidden="true"></i>
-                      <?php echo $view['name'] ?>
-                    </strong>
-                  </li>
-                  <li>
-                    <span class="sound_only">댓글</span>
-                    <strong>
-                      <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                      <?php echo number_format($view['wr_comment']) ?>건
-                    </strong>
-                  </li>
-                  <li>
-                    <span class="sound_only">조회</span>
-                    <strong>
-                      <i class="fa fa-eye" aria-hidden="true"></i>
-                      <?php echo number_format($view['wr_hit']) ?>회
-                    </strong>
-                  </li>
-                  <li>
-                    <span class="sound_only">작성일</span>
+                    <span class="if_date_tit">작성일</span>
                     <strong class="if_date">
-                      <i class="fa fa-clock-o" aria-hidden="true"></i>
                       <?php echo date("Y.m.d", strtotime($view['wr_datetime'])) ?>
                     </strong>
                   </li>
@@ -176,7 +154,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
           
           <!-- 게시글 이동 버튼 { -->
           <div id="bo_v_oth">
-            <a href="<?php echo $list_href ?>" class="bo_v_back_btn">LIST</a>
+            <a href="<?php echo $list_href ?>" class="bo_v_back_btn">목록으로</a>
           </div>
           <!-- } 게시글 이동 버튼 -->
 

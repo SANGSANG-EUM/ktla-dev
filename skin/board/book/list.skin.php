@@ -224,9 +224,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
                       <div class="mo_view mo_contents">
                         <ul class="i-col-0 bo_info">
-                          <li><i class="fa fa-user-o" aria-hidden="true"></i><?php echo $list[$i]['name'] ?></li>
-                          <li><i class="fa fa-eye" aria-hidden="true"></i><?php echo $list[$i]['wr_hit'] ?></li>
-                          <li><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo date("Y.m.d", strtotime($list[$i]['wr_datetime'])) ?></li>
+                          <li><?php echo date("Y.m.d", strtotime($list[$i]['wr_datetime'])) ?></li>
                         </ul>
                       </div>
                     </td>
