@@ -146,6 +146,10 @@
   .radio_li input[type=radio]:checked + label::before {width: 20px; height: 20px;}
   .radio_li input[type=radio]:checked + label::after {width: 10px; height: 10px;}
 
+  .checkbtn2 input[type=checkbox] + label {font-size: 14px;}
+  .checkbtn2 input[type=checkbox] + label:before {width: 20px; height: 20px; margin-right: 5px;}
+  .checkbtn2 input[type=checkbox]:checked + label:before {background: #d9d9d9 url('/ktla-dev/source/img/check-icon.png') no-repeat center/12px auto;}
+
   /* Header */
   #header {height: 100px;}
   #hd_gnb {display: none !important;}
@@ -495,7 +499,7 @@
 
   /* 등록확인 */
   .regi_confirm_caption {font-size: 14px;}
-  
+
   .regi_confirm_title {padding-left: 10px; font-size: 16px;}
   .regi_confirm_title::before {width: 5px; height: 5px; top: 8px; transform: inherit;}
 

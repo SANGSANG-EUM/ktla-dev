@@ -387,3 +387,67 @@
 #profile .my_profile_img img {border-radius:50%}
 #profile .profile_img img {border-radius:50%}
 #profile .profile_name .sv_wrap {font-weight:bold;text-align:left}
+
+
+@media screen and (max-width:1290px){
+  .mb_default-title .big-tit {font-size: 52px;}
+  .mb_default-title {margin-bottom: 50px;}
+
+  #fregister_term {padding: 30px;}
+}
+
+@media screen and (max-width:1023px){
+  .mb_default_ct {margin: 200px auto 150px;}
+  .mb_default-title {margin-bottom: 40px;}
+  .mb_default-title .big-tit {font-size: 48px;}
+
+  #fregister_term .term_tsec2_txt1 {padding-left: 20px; font-size: 18px;}
+  #fregister_term .term_tsec2_txt1:before {top: 8px; left: 5px;}
+
+  .register .reg-group-txt1 {padding-left: 20px; font-size: 18px;}
+  .register .reg-group-txt1:before {top: 8px; left: 5px;}
+  .reg-group-in {padding-left: 20px;}
+}
+
+@media screen and (max-width:767px){
+  .mb_default_ct {margin: 130px auto 100px;}
+  .mb_default-title {margin-bottom: 30px;}
+  .mb_default-title .sm-tit {font-size: 16px;}
+  .mb_default-title .big-tit {font-size: 30px;}
+
+  #mb_login #login_fs .fm-input {height: 50px; padding: 0 10px; font-size: 14px;}
+  
+  #login_info .login_if_auto label {font-size: 13px;}
+  #login_info .login_find {gap: 0 2px;}
+  #login_info .login_find .bar {font-size: 12px; font-weight: 300;}
+  #login_info .login_find a {font-size: 13px;}
+
+  #fregister_term {padding: 20px;}
+  #fregister_term .term_tsec1_txt1 {font-size: 16px;}
+  #fregister_term .term_tsec1_txt2 {font-size: 16px;}
+  #fregister_term .term_tsec2 {margin-top: 20px;}
+  #fregister_term .term_tsec2_txt_ul1 {margin-top: 10px;}
+  #fregister_term .term_tsec2_txt_ul2 {margin-top: 10px;}
+  #fregister_term .term_tsec2_txt_ul2 > li {margin-top: 10px;}
+  #fregister_term .term_tsec2_txt2 {font-size: 14px;}
+  #fregister_term .term_tsec2_txt3 {display: block; width: 100%; font-size: 14px;}
+  #fregister_term .term_tsec2_txt4 {display: block; width: 100%; font-size: 14px;}
+  #fregister_term .term_tsec2_txt_ul2 > li {display: block;}
+  #fregister_term .term_tsec3_txt1 {font-size: 14px;}
+  #fregister_term .term_tsec3_txt2 {font-size: 14px;}
+  #fregister_chkall {margin: 10px auto 30px; padding: 15px 10px;}
+
+  .register .reg-group {margin-top: 50px; padding: 20px 0;}
+  .register .reg-group-txt2 {margin-top: 10px; font-size: 14px;}
+  .register .reg-group-btn {padding: 10px 15px; font-size: 14px;}
+
+  #register_form {padding-right: 0;}
+  #register_form .register_form_label {display: block; float: none; width: 100%; margin: 0 0 5px; padding: 0; font-size: 14px;}
+  #register_form .register_form_ibox {display: block; float: none; width: 100%;}
+  #register_form .btn_frmline_wrap .fm-input {padding: 0 5px; font-size: 12px;}
+  #register_form .register_form_ibox .fm-input {padding: 0 5px; font-size: 12px;}
+
+  #register_form .btn_frmline_wrap .fm-input {width: calc(100% - 70px);}
+  #register_form a.btn_frmline, 
+  #register_form button.btn_frmline {width: 60px; font-size: 12px;}
+}
