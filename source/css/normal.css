@@ -153,7 +153,7 @@
 /* Sub */
 .sb_top {}
 .sb_top.introduce_top {background: url('/ktla-dev/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
-.sb_top.organization_top {background: url('/ktla-dev/source/img/sb-top-bg-introduce.jpg') no-repeat center/cover;}
+.sb_top.organization_top {background: url('/ktla-dev/source/img/sb-top-bg-organization.jpg') no-repeat center/cover;}
 .sb_top.publication_top {background: url('/ktla-dev/source/img/sb-top-bg-publication.jpg') no-repeat center/cover;}
 .sb_top.community_top {background: url('/ktla-dev/source/img/sb-top-bg-community.jpg') no-repeat center/cover;}
 .sb_top.seminar_top {background: url('/ktla-dev/source/img/sb-top-bg-seminar.jpg') no-repeat center/cover;}
