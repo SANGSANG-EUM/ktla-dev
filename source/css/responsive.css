@@ -155,6 +155,8 @@
   #hd_gnb {display: none !important;}
   .hd_mb {display: none;}
 
+  #mo_menu_btn {display: block;}
+
   /* Main */
   #main {height: auto !important;}
   #main .section {display: block !important; height: auto !important; table-layout: inherit !important;}
@@ -313,6 +315,12 @@
   #header {height: 60px;}
   #hd_logo {left: 20px; height: 60px;}
   #hd_logo img {width: 200px;}
+
+  #mo_menu_btn {right: 20px;}
+  #mo_menu_ct {padding-top: 60px;}
+  #mo_menu_ct .mo_mb_menu {padding-left: 20px; padding-right: 20px;}
+  #mo_hd_gnb .depth1 > li > span {padding-left: 20px; padding-right: 20px;}
+  #mo_hd_gnb .depth2 > li > a {padding-left: 30px; padding-right: 30px;}
 
   /* Footer */
   .partners .inner {display: block; height: auto; padding: 10px 0;}

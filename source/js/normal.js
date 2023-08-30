@@ -80,6 +80,8 @@ const scrollHeader = (scrollValue) => {
 }
 
 $(document).ready(function(){
+  let scrollValue = $(document).scrollTop();
+
   $(".hd_mb-btn.login").on('click', function(){
     $("#hd_mb_ov").toggleClass("on");
   })
@@ -98,12 +100,42 @@ $(document).ready(function(){
         } else {
           headerStyle();
         }
-        
 
         //메인 퀵메뉴 오버 마우스 효과(초기화)
         $(".main_quick_list-item").eq(0).addClass('act').siblings().removeClass('act');
       }
     }
+  });
+
+  const hd = document.getElementById('header');
+  const hdMobileMenuBtn = document.getElementById('mo_menu_btn');
+  const mobileMenu = document.getElementById('mo_menu_ct');
+  const hdLogo = document.querySelector('#hd_logo img');
+
+  //모바일 메뉴 토글
+  hdMobileMenuBtn.addEventListener('click', function() {
+    if( hdMobileMenuBtn.classList.contains('act') ) {
+      hdMobileMenuBtn.classList.remove('act');
+      if ( scrollValue > 30 ) {
+        hd.classList.add('black2');
+        hdLogo.setAttribute('src', '/ktla-dev/source/img/logo.png');
+      } else {
+        hd.classList.remove('black2');
+        hdLogo.setAttribute('src', '/ktla-dev/source/img/logo-white.png');
+      }
+      mobileMenu.classList.remove('act');
+    } else {
+      hdMobileMenuBtn.classList.add('act');
+      hd.classList.remove('black2');
+      hdLogo.setAttribute('src', '/ktla-dev/source/img/logo.png');
+      mobileMenu.classList.add('act');
+    }
+  });
+
+  $("#mo_hd_gnb .depth1 > li > span").on('click', function() {
+    const mobileMenu_depth2 = $(this).siblings('.depth2');
+
+    mobileMenu_depth2.slideToggle(200).closest('li').siblings('li').find('.depth2').slideUp(200);
   });
 
   //메인 비주얼 정지/시작
@@ -122,7 +154,6 @@ $(document).ready(function(){
     $(this).addClass('act').siblings().removeClass('act');
   });
 
-  let scrollValue = $(document).scrollTop();
   scrollHeader(scrollValue);
 
   $(window).scroll(function(){

@@ -72,6 +72,12 @@ if(defined('_INDEX_')) { // index에서만 실행
     </ul>
   </nav>
 
+  <button type="button" id="mo_menu_btn" class="">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
   <div class="hd_mb">
     <?php if($is_member){ ?>
     <button type="button" class="hd_mb-btn login">
@@ -97,6 +103,52 @@ if(defined('_INDEX_')) { // index에서만 실행
     <a href="/ktla-dev/bbs/login.php" class="hd_mb-btn"><img src="/ktla-dev/source/img/login-icon.png" alt="">로그인</a>
     <?php } ?>
   </div>
+</div>
+
+<div id="mo_menu_ct">
+  <div class="mo_mb_menu">
+    <ul>
+    <?php if($is_member){ ?>
+    <li>
+      <a href="/ktla-dev/bbs/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a>
+    </li>
+    <li>
+      <a href="/ktla-dev/bbs/logout.php">로그아웃</a>
+    </li>
+    <?php } else { ?>
+    <li>
+      <a href="/ktla-dev/bbs/login.php">로그인</a>
+    </li>
+    <?php } ?>
+    </ul>
+  </div>
+  <nav id="mo_hd_gnb">
+    <ul class="depth1">
+      <?php foreach ($sb_menus as $menu) { ?>
+      <li>
+        <span href="<?php echo $menu['link'];?>"><?php echo $menu['name'];?></span>
+        <?php if ( isset($menu['sb_2menus']) ) { ?>
+        <ul class="depth2">
+          <?php foreach ($menu['sb_2menus'] as $menu2) { ?>
+          <li>
+            <a href="<?php echo $menu2['link'];?>"><?php echo $menu2['name'];?></a>
+            <?php if ( isset($menu2['sb_3menus']) ) { ?>
+            <ul class="depth3">
+              <?php foreach ($menu2['sb_3menus'] as $menu3) { ?>
+              <li>
+                <a href="<?php echo $menu3['link'];?>"><?php echo $menu3['name'];?></a>
+              </li>
+              <?php } ?>
+            </ul>
+            <?php } ?>
+          </li>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+      </li>
+      <?php } ?>
+    </ul>
+  </nav>
 </div>
 <!-- } 헤더 끝 -->
 
